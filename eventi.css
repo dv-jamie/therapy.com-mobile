@@ -1,12 +1,10 @@
 .content-wrap {
     width: 1400px;
     margin: 60px auto 0;
-    /* border: 1px solid red; */
 }
 .option-area,
 .card-area {
     padding: 0 16px;
-    /* border: 1px solid orange; */
 }
 .filtering-area {
     margin-bottom: 16px;
