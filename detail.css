@@ -1,0 +1,105 @@
+/* 레이아웃 */
+.detail-header,
+.detail-main {
+    width: 1000px;
+    margin: 60px auto 0;
+}
+
+/* 상단 영역 */
+.detail-header {
+    border: 1px solid var(--light-gray);
+}
+
+/* 제목 영역 */
+.title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--light-gray);
+}
+.title-wrap {
+    width: 75%;
+    border-right: 1px solid var(--light-gray);
+}
+.title-wrap > h3 {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+.title-wrap > h1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+.company-image-wrap {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+.company-image-wrap > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 아이콘 영역 */
+.icon-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon-wrap > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-wrap > li > i {
+    margin-bottom: 10px;
+    padding: 16px;
+    border: 1px solid var(--main-yellow);
+    border-radius: 50%;
+    color: var(--main-yellow);
+}
+.icon-wrap > li > span {
+    font-size: 14px;
+}
+
+/* 섹션 */
+.section {
+    padding: 32px;
+    border-bottom: 1px solid var(--light-gray);
+}
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.section li {
+    margin: 14px 0;
+}
+.section li > label {
+    display: inline-block;
+    width: 80px;
+    color: var(--main-yellow);
+}
+
+/* 지원 버튼 영역 */
+.apply-button-wrap {
+    width: 100%;
+    text-align: center;
+}
+.apply-button-wrap > button {
+    width: 260px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.apply-button-wrap > button:first-of-type {
+    border: none;
+    background-color: var(--main-yellow);
+    color: #fff;
+    margin-right: 8px;
+}
+.apply-button-wrap > button:last-of-type {
+    border: 1px solid var(--main-yellow);
+    background-color: #fff;
+    color: var(--main-yellow);
+}
