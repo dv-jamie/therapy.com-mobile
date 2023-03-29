@@ -1,0 +1,34 @@
+.header-container {
+    width: 100%;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--gray-de);
+}
+.gnb-container {
+    width: 100%;
+    margin-bottom: 59px;
+    border-bottom: 1px solid var(--primary-yellow);
+}
+.content-container {
+    display: flex;
+    gap: 40px;
+    width: 1300px;
+    margin: 0 auto;
+}
+.snb-container {
+    flex: 260px;
+    border: 1px solid var(--gray-d9);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.main-container {
+    width: 100%;
+}
+.footer-container {
+    width: 100%;
+    margin-top: 60px;
+    color: var(--primary-gray);
+}
+
+.hide {
+    display: none;
+}

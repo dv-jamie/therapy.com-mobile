@@ -1,22 +1,10 @@
-/* common */
-.header,
-.gnb {
-    width: 1300px;
-    color: var(--primary-gray);
-}
-
-/* header */
-.header-container {
-    width: 100%;
-    padding: 28px 0;
-    border-bottom: 1px solid var(--gray-de);
-}
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1300px;
     margin: 0 auto;
+    color: var(--primary-gray);
     font-size: 14px;
 }
 
@@ -65,40 +53,4 @@
     width: 1px;
     height: 8px;
     background: var(--primary-gray);
-}
-
-/* gnb */
-.gnb-container {
-    width: 100%;
-    margin-bottom: 59px;
-    border-bottom: 1px solid var(--primary-yellow);
-}
-.gnb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-}
-.gnb-left > li,
-.gnb-right > li {
-    position: relative;
-    display: inline-block;
-    padding: 17px 40px;
-    font-weight: 700;
-    cursor: pointer;
-}
-.gnb-left > li:not(:last-of-type)::after,
-.gnb-right > li:not(:last-of-type)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 8px;
-    background: var(--gray-d9);
-}
-.gnb-right > li > img {
-    transform: translateY(3px);
 }

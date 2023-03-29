@@ -1,0 +1,31 @@
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    margin: 0 auto;
+    color: var(--primary-gray);
+    text-align: center;
+}
+.gnb-left > li,
+.gnb-right > li {
+    position: relative;
+    display: inline-block;
+    padding: 17px 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.gnb-left > li:not(:last-of-type)::after,
+.gnb-right > li:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 8px;
+    background: var(--gray-d9);
+}
+.gnb-right > li > img {
+    transform: translateY(3px);
+}
