@@ -113,6 +113,7 @@
     background: none;
     border: none;
     color: var(--gray-62);
+    font-size: 16px;
     letter-spacing: -0.055em;
     text-decoration: underline;
     cursor: pointer;
@@ -203,7 +204,8 @@
     cursor: pointer;
 }
 
-.report-table .title-cell {
+.report-table .title-cell,
+.usage-history-table .title-cell {
     width: 650px;
 }
 

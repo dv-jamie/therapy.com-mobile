@@ -1,3 +1,6 @@
+.red-text {
+    color: var(--primary-red);
+}
 .green-text {
     color: var(--primary-green);
 }
@@ -328,7 +331,7 @@
 }
 .caution-text {
     margin: 10px 0 20px;
-    color: var(--primary-red);
+    color: var(--sub-red);
     font-size: 12px;
     letter-spacing: -0.05em;
 }

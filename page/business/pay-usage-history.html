@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테라피닷컴 - 업체회원</title>
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="/css/snb.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+</head>
+
+<body>
+    <header id="header" class="container header-container"></header>
+    <nav id="gnb" class="gnb-container"></nav>
+
+    <div class="content-container">
+        <aside id="snb" class="snb-container business-snb"></aside>
+        <main id="main" class="main-container">
+            <!-- 유료 이용현황 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">유료 이용현황</h6>
+                </div>
+
+                <table class="table usage-history-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td">구분</td>
+                            <td class="td title-cell">광고내용</td>
+                            <td class="td">사용만료일</td>
+                            <td class="td">잔여일수</td>
+                            <td class="td">상태</td>
+                        </tr>
+                    </thead>
+
+                    <!-- 데이터 없을 경우 -->
+                    <!-- <tbody class="tbody">
+                        <tr class="tbody-row no-data-row">
+                            <td class="td" colspan="5">
+                                <p>진행중인 광고 내역이 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody> -->
+
+                    <!-- 데이터 있을 경우 -->
+                    <tbody>
+                        <tr class="tbody-row">
+                            <td class="td">업체</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">
+                                    프리미어 3개월 55만원(이벤트)
+                                </div>
+                            </td>
+                            <td class="td red-text">2023.04.15</td>
+                            <td class="td">32일</td>
+                            <td class="td">진행중</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 유료 이용현황 끝 -->
+            
+            <!-- 결제내역 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">결제내역</h6>
+                </div>
+
+                <table class="table usage-history-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td">번호</td>
+                            <td class="td">결제방법</td>
+                            <td class="td">결제금액</td>
+                            <td class="td">승인일</td>
+                            <td class="td">결제상품</td>
+                            <td class="td">상태</td>
+                            <td class="td">신청</td>
+                        </tr>
+                    </thead>
+
+                    <!-- 데이터 없을 경우 -->
+                    <!-- <tbody class="tbody">
+                        <tr class="tbody-row no-data-row">
+                            <td class="td" colspan="7">
+                                <p>결제 내역이 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody> -->
+
+                    <!-- 데이터 있을 경우 -->
+                    <tbody>
+                        <tr class="tbody-row">
+                            <td class="td">10</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">9</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">8</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">7</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">6</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">5</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">4</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">3</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">1</td>
+                            <td class="td">무통장입금 </td>
+                            <td class="td">550,000원</td>
+                            <td class="td">2023-03-14 14:36:55</td>
+                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
+                            <td class="td">승인</td>
+                            <td class="td">
+                                <button class="detail-button">세금계산서</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 결제내역 끝 -->
+
+            <!-- 페이지 내비게이션 -->
+            <ul class="page-navi">
+                <li class="current-page">1</li>
+                <!-- 아이콘 대체 필요 -->
+                <li>></li>
+                <!-- 아이콘 대체 필요 -->
+                <li>>></li>
+            </ul>
+            <!-- 페이지 내비게이션 끝 -->
+        </main>
+    </div>
+
+    <footer id="footer" class="footer-container"></footer>
+
+    <script type="text/javascript" src="../../setLayout.js"></script>
+</body>
+
+</html>
