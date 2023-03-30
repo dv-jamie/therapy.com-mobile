@@ -38,6 +38,29 @@
     transform: translateY(-2.5px) rotate(45deg);
 }
 
+.participate-status-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 16px 20px;
+    border: 1px solid var(--gray-eb );
+    border-radius: 4px;
+}
+.status-text-group {
+    display: inline-block;
+    margin-right: 30px;
+    letter-spacing: -0.05em;
+}
+.charge-wrap > .underline-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-7d);
+    cursor: pointer;
+}
+.charge-wrap > .icon {
+    transform: translateY(3px);
+}
 
 /*
 테이블 영역
@@ -190,6 +213,10 @@
 
 .manage-recruiting-info-table .title-cell {
     width: 695px;
+}
+
+.participate-personn-list-table .title-cell {
+    width: 450px;
 }
 
 .align-left {
