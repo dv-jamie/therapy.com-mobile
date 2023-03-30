@@ -1,7 +1,11 @@
 .snb-title-wrap {
-    padding: 24px 20px;
     background: var(--primary-gray);
     color: #fff;
+}
+.snb-title-wrap > a {
+    display: inline-block;
+    width: 100%;
+    padding: 24px 20px;
 }
 .page-sub-title {
     margin-bottom: 4px;
