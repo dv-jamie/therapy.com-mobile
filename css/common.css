@@ -508,3 +508,24 @@
 .select-option-wrap > li {
     padding: 10px 5px;
 }
+.payment-history-desc {
+    margin: calc(-20px + 4px) 0 20px;
+    padding: calc(14px - 5px) 14px;
+    border: 1px solid var(--gray-d9);
+    border-radius: 4px;
+    background: var(--gray-f4);
+    font-size: 14px;
+    letter-spacing: -0.05em;
+}
+.payment-history-desc > li {
+    padding: 5px;
+}
+.payment-history-desc label {
+    display: inline-block;
+    width: 88px;
+    color: var(--gray-68);
+    font-weight: 500;
+}
+.payment-history-desc span {
+    color: #999;
+}
