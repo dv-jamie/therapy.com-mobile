@@ -180,15 +180,17 @@
     cursor: pointer;
 }
 
-.recommend-person-table .title-cell {
-    width: 490px;
-}
-
 .report-table .title-cell {
     width: 650px;
 }
 
+.recommend-person-table .title-cell {
+    width: 490px;
+}
 
+.manage-recruiting-info-table .title-cell {
+    width: 695px;
+}
 
 .align-left {
     text-align: left;

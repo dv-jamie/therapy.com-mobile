@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테라피닷컴 - 개인회원</title>
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="/css/snb.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+</head>
+
+<body>
+    <header id="header" class="container header-container"></header>
+    <nav id="gnb" class="gnb-container"></nav>
+
+    <div class="content-container">
+        <aside id="snb" class="snb-container"></aside>
+        <main id="main" class="main-container">
+            <!-- 채용정보관리 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">채용정보 관리</h6>
+                </div>
+
+                <table class="table manage-recruiting-info-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td title-cell">채용정보제목</td>
+                            <td class="td">최종수정일</td>
+                            <td class="td">채용정보등록일</td>
+                            <td class="td">관리</td>
+                        </tr>
+                    </thead>
+
+                    <!-- 데이터 없을 경우 -->
+                    <!-- <tbody class="tbody">
+                        <tr class="tbody-row no-data-row">
+                            <td class="td" colspan="4">
+                                <p>등록된 채용정보가 없습니다.</p>
+                                <button class="table-create-data-button">채용정보 등록</button>
+                            </td>
+                        </tr>
+                    </tbody> -->
+
+                    <!-- 데이터 있을 경우 -->
+                    <tbody>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="title-cell ellipsis"><신규 오픈 &#47; 최신시설> 포항 남구 북경아로마에서 매니저 및 직원 모집 합니다. [일급 50이상]</div>
+                            </td>
+                            <td class="td">2023.03.15</td>
+                            <td class="td">2023.03.10</td>
+                            <td class="td">
+                                <button class="manage-button  edit-button">수정</button>
+                                <button class="manage-button delete-button">삭제</button>
+                            </td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 채용정보관리 끝 -->
+        </main>
+    </div>
+
+    <footer id="footer" class="footer-container"></footer>
+
+    <script type="text/javascript" src="../../setLayout.js"></script>
+</body>
+
+</html>
