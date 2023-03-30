@@ -37,13 +37,17 @@
                     </h6>
                 </div>
 
-                <table class="table my-person-info-table">
+                <table class="table scrap-employment-table">
                     <thead class="thead">
                         <tr class="thead-row">
-                            <td class="td title-cell">인재정보제목</td>
-                            <td class="td">관심업체수</td>
-                            <td class="td">최종 수정일</td>
-                            <td class="td">인재정보등록일</td>
+                            <td class="td">
+                                <img src="/icons/checkbox.svg" />
+                            </td>
+                            <td class="td company-name-cell">업체명</td>
+                            <td class="td title-cell">제목</td>
+                            <td class="td">급여</td>
+                            <td class="td">지역</td>
+                            <td class="td">보기</td>
                         </tr>
                     </thead>
 
@@ -51,7 +55,7 @@
                     <!-- <tbody class="tbody">
                         <tr class="tbody-row no-data-row">
                             <td class="td" colspan="4">
-                                <p>등록된 인재정보가 없습니다.</p>
+                                <p>스크랩한 채용정보가 없습니다.</p>
                                 <button class="table-create-data-button">인재정보 등록</button>
                             </td>
                         </tr>
@@ -61,14 +65,286 @@
                     <tbody>
                         <tr class="tbody-row">
                             <td class="td">
-                                <div class="title-cell ellipsis">24살 강남에서 일하고 싶습니당</div>
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
                             </td>
-                            <td class="td">8</td>
-                            <td class="td">2023.03.14</td>
-                            <td class="td">2023.03.10</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    에스파
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    수원 내 업계최고 페이!, 삼성전자 인근 콜넘쳐요! | 수원 마사지구인, 수원 피부관리사 구인 |경기 수원시 영통구 신원로294번길
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 수원</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    중심스웨디시
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    시흥 정왕동 중심스웨디시 스웨디시 마사지구인 | 고페이보장 당일지급 | ♥갯수보장♥ 시흥배곧신도시 스웨디시 알바 구인
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 시흥</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    볼륨테라피(VL테라피)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    수원 영통 No.1 소프트샵 볼륨테라피 스웨디시 마사지구인구직 | 수원 피부관리사 구인, 수원 체형관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 수원</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    퍼스트클래스테라피
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    강남 퍼스트클래스 /관리쌤급구/리뉴얼 재오픈 | 강남 압구정 마사지구인, 스웨디시구인, 피부관리사구인 | 서울 강남구 언주로172길 66
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">서울 강남</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    로데오스웨디시테라피
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    라보떼테라피
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    탑시크릿
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    청담더타이
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    청라오아시스
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    수테라피
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row closed-row">
+                            <td class="td">
+                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
+                            </td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    클래식
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    제휴종료된 업체입니다.
+                                </div>
+                            </td>
+                            <td class="td">
+                                <span class="green-text">일</span> 50만
+                            </td>
+                            <td class="td">경기 일산</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
+
+                <button class="delete-selected-item-button">선택삭제</button>
+
+                <!-- 페이지 네비게이션 -->
+                <ul class="page-navi">
+                    <li class="current-page">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <!-- 아이콘 대체 필요 -->
+                    <li>></li>
+                    <!-- 아이콘 대체 필요 -->
+                    <li>>></li>
+                </ul>
+                <!-- 페이지 네비게이션 끝 -->
             </div>
             <!-- 스크랩 채용정보 끝 -->
         </main>
