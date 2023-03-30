@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
+    width: 1400px;
     margin: 0 auto;
-    color: var(--primary-gray);
     text-align: center;
 }
 .gnb-left > li,

@@ -7,6 +7,7 @@
     margin-bottom: 4px;
     font-weight: 500;
     font-size: 14px;
+    line-height: 14px;
     letter-spacing: -0.05em;
 }
 .page-title {
@@ -25,6 +26,7 @@
     background: var(--gray-f5);
     font-weight: 700;
     font-size: 14px;
+    line-height: 14px;
     letter-spacing: -0.05em;
 }
 .sub-menu-wrap {
@@ -35,5 +37,6 @@
     padding: 13px 20px;
     font-weight: 400;
     font-size: 14px;
+    line-height: 14px;
     letter-spacing: -0.05em;
 }

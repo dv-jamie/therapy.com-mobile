@@ -1,0 +1,112 @@
+.table-container {
+    width: 1100px;
+    margin-top: 60px;
+}
+
+/*
+테이블 타이틀 영역
+*/
+.table-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.table-title {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+}
+.table-more-button {
+    border: none;
+    background: none;
+    color: var(--gray-62);
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+}
+.table-more-button::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 4px;
+    border-top: 1px solid var(--gray-62);
+    border-right: 1px solid var(--gray-62);
+    transform: translateY(-2.5px) rotate(45deg);
+}
+
+/*
+테이블 영역
+*/
+.table {
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+.thead-row {
+    border-top: 2px solid var(--primary-gray);
+    border-bottom: 1px solid var(--gray-cb);
+    background: var(--gray-f5);
+}
+.td {
+    padding: 17px 5px;
+}
+
+.tbody-row {
+    border-bottom: 1px solid var(--gray-cb);
+}
+.tbody-cell {
+    letter-spacing: -0.05em;
+}
+
+.no-data-row > .tbody-cell {
+    padding: 60px 0;
+}
+.table-create-data-button {
+    width: 180px;
+    height: 40px;
+    margin-top: 14px;
+    border: 1px solid var(--primary-blue);
+    background: none;
+    color: var(--primary-blue);
+    font-size: 16px;
+    letter-spacing: -0.05em;
+}
+
+.show-detail-button {
+    background: none;
+    border: none;
+    color: var(--gray-62);
+    letter-spacing: -0.055em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+셀 크기 및 텍스트 정렬 개별 조정
+*/
+.my-person-info-table .title-cell {
+    width: 670px;
+}
+
+.interested-company-table .company-name-cell {
+    width: 130px;
+}
+.interested-company-table .recruiting-info-cell {
+    width: 730px;
+    text-align: left;
+}
+
+.recommend-table .company-name-cell {
+    width: 100px;
+}
+.recommend-table .title-cell {
+    width: 710px;
+    text-align: left;
+}
