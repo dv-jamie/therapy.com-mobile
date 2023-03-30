@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테라피닷컴 - 업체회원</title>
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="/css/snb.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+</head>
+
+<body>
+    <header id="header" class="container header-container"></header>
+    <nav id="gnb" class="gnb-container"></nav>
+
+    <div class="content-container">
+        <aside id="snb" class="snb-container"></aside>
+        <main id="main" class="main-container">
+            <!-- 요약 정보 -->
+            <div class="summary-wrap">
+                <div class="profile-wrap">
+                    <div class="summary-icon-wrap profie-image-wrap">
+                        <img src="/icons/default-profile.svg" alt="프로필 이미지" />
+                    </div>
+                    <img class="camera-icon" src="/icons/camera.svg" alt="카메라 아이콘" />
+                    <h6 class="summary-title">북경아로마</h6>
+                    <p class="profile-desc">프리미어 광고 3개월 이용중</p>
+                    <p class="profile-desc profile-desc-blue">
+                        광고상품 만료일<br />
+                        2023.03.13 ~ 2023.06.13
+                    </p>
+                    <button class="summary-button">
+                        <a href="#">업체정보 수정</a>
+                    </button>
+                </div>
+
+                <ul class="summary-list">
+                    <li class="summary-box">
+                        <div class="summary-icon-wrap">
+                            <img src="/icons/recruiting-info.svg" alt="채용정보 아이콘" />
+                        </div>
+                        <h6 class="summary-title">채용정보</h6>
+                        <p class="summary-desc">1건</p>
+                        <button class="summary-button">
+                            <a href="/page/personal/manage-personal-info.html">자세히 보기</a>
+                        </button>
+                    </li>
+
+                    <li class="summary-box">
+                        <div class="summary-icon-wrap">
+                            <img src="/icons/recruiting-status.svg" alt="채용정보 현황 아이콘" />
+                        </div>
+                        <h6 class="summary-title">채용정보 현황</h6>
+                        <p class="summary-desc">채용중 / 노출</p>
+                        <button class="summary-button">
+                            <a href="/page/personal/manage-personal-info.html">내 글 확인하기</a>
+                        </button>
+                    </li>
+
+                    <li class="summary-box">
+                        <div class="summary-icon-wrap">
+                            <img src="/icons/interested-person.svg" alt="관심 등록 인재 아이콘" />
+                        </div>
+                        <h6 class="summary-title">관심 등록 인재</h6>
+                        <p class="summary-desc">총 18건 / 잔여 4건</p>
+                        <button class="summary-button">
+                            <a href="/page/personal/interested-company-list.html">자세히 보기</a>
+                        </button>
+                    </li>
+
+                    <li class="summary-box">
+                        <div class="summary-icon-wrap">
+                            <img src="/icons/paid-service.svg" alt="유료이용내역 아이콘" />
+                        </div>
+                        <h6 class="summary-title">유료이용내역</h6>
+                        <p class="summary-desc">27건</p>
+                        <button class="summary-button">
+                            <a href="/page/personal/scrap-employment-list.html">자세히 보기</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- 요약 정보 끝 -->
+
+            <!-- 내 채용정보 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">내 채용정보</h6>
+                </div>
+
+                <table class="table my-person-info-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td title-cell">채용정보제목</td>
+                            <td class="td">스크랩수</td>
+                            <td class="td">최종수정일</td>
+                            <td class="td">채용정보등록일</td>
+                            <td class="td">수정</td>
+                        </tr>
+                    </thead>
+
+                    <!-- 데이터 없을 경우 -->
+                    <!-- <tbody class="tbody">
+                        <tr class="tbody-row no-data-row">
+                            <td class="td" colspan="5">
+                                <p>등록된 채용정보가 없습니다.</p>
+                                <button class="table-create-data-button">채용정보 등록</button>
+                            </td>
+                        </tr>
+                    </tbody> -->
+
+                    <!-- 데이터 있을 경우 -->
+                    <tbody>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="title-cell ellipsis"><신규 오픈 &#47; 최신시설> 포항 남구 북경아로마에서 매니저 및 직원 모집 합니다. [일급 50이상]</div>
+                            </td>
+                            <td class="td">1857</td>
+                            <td class="td">2023.03.15</td>
+                            <td class="td">2023.03.10</td>
+                            <td class="td">
+                                <button class="detail-button">수정하기</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 내 채용정보 끝 -->
+
+            <!-- 추천인재정보 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">추천인재정보</h6>
+                </div>
+
+                <table class="table recommend-person-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td">등록일</td>
+                            <td class="td company-name-cell">인재정보</td>
+                            <td class="td title-cell">제목</td>
+                            <td class="td">경력</td>
+                            <td class="td">희망지역</td>
+                            <td class="td">보기</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row two-line-row">
+                            <td class="td">23.03.13</td>
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    010-****-**17<br />
+                                    (여, 32세)
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="title-cell ellipsis align-left">
+                                    <p>일산에서 일 찾아봅니당~</p>
+                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                                </div>
+                            </td>
+                            <td class="td">1년 6개월</td>
+                            <td class="td">경기</td>
+                            <td class="td">
+                                <button class="detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 추천인재정보 끝 -->
+        </main>
+    </div>
+
+    <footer id="footer" class="footer-container"></footer>
+
+    <script type="text/javascript" src="../../setLayout.js"></script>
+</body>
+
+</html>

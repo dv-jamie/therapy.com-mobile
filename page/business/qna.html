@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테라피닷컴 - 개인회원</title>
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="/css/snb.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+</head>
+
+<body>
+    <header id="header" class="container header-container"></header>
+    <nav id="gnb" class="gnb-container"></nav>
+
+    <div class="content-container">
+        <aside id="snb" class="snb-container"></aside>
+        <main id="main" class="main-container">
+            <!-- 1:1문의 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">1:1문의</h6>
+                </div>
+
+                <table class="table qna-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td">문의일</td>
+                            <td class="td">문의사유</td>
+                            <td class="td title-cell">제목</td>
+                            <td class="td">처리상태</td>
+                        </tr>
+                    </thead>
+
+                    <!-- 데이터 없을 경우 -->
+                    <!-- <tbody class="tbody">
+                        <tr class="tbody-row no-data-row">
+                            <td class="td" colspan="5">
+                                <p>최근 작성한 문의내역이 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody> -->
+
+                    <!-- 데이터 있을 경우 -->
+                    <tbody>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">인재정보에 글 삭제해주세요</div>
+                            </td>
+                            <td class="td status-cell">답변대기</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">아이디변경</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">문의드립니다.</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">문의드립니다.</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">광고에 전화는 어떻게 거나요?</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">여기서 인재등록도 돈 내야하나요?</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">신고 기능 없나요?</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">비밀번호 변경 어떻게 하나요?</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">개인에서 업체로 변경 가능한가요?</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.01</td>
+                            <td class="td">기타문의</td>
+                            <td class="td">
+                                <div class="title-cell ellipsis">여기 다 건전 업소인가요?</div>
+                            </td>
+                            <td class="td status-cell">답변완료</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="table-assistant-button">문의하기</button>
+
+                <!-- 페이지 네비게이션 -->
+                <ul class="page-navi">
+                    <li class="current-page">1</li>
+                    <!-- 아이콘 대체 필요 -->
+                    <li>></li>
+                    <!-- 아이콘 대체 필요 -->
+                    <li>>></li>
+                </ul>
+                <!-- 페이지 네비게이션 끝 -->
+            </div>
+            <!-- 인재정보관리 끝 -->
+            <!-- 페이지 안내 -->
+            <div class="page-information">
+                <ul class="paragraph">
+                    <li class="paragraph-list show-list-style">
+                        1년 이내의 온라인 문의내역을 확인하실 수 있습니다.
+                    </li>
+                    <li class="paragraph-list show-list-style">
+                        처리상태가 처리중인 경우 상담원이 고객님의 문의 접수 후 처리중인 상태입니다.
+                    </li>
+                </ul>
+            </div>
+            <!-- 1:1문의 끝 -->
+        </main>
+    </div>
+
+    <footer id="footer" class="footer-container"></footer>
+
+    <script type="text/javascript" src="../../setLayout.js"></script>
+</body>
+
+</html>

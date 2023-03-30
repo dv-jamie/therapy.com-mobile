@@ -115,12 +115,11 @@
     right: 60px;
     cursor: pointer;
 }
-.join-date,
-.recent-login-date {
+.profile-desc {
     font-size: 12px;
     letter-spacing: -0.05em;
 }
-.recent-login-date {
+.profile-desc-blue {
     margin: 10px 0 20px;
     color: var(--primary-blue);
     line-height: 16px;
