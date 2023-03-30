@@ -1,6 +1,9 @@
 .green-text {
     color: var(--primary-green);
 }
+.blue-text {
+    color: var(--primary-blue);
+}
 .bold-text {
     font-weight: bold;
 }
@@ -178,6 +181,17 @@
 }
 .additional-info {
     color: var(--gray-84);
+}
+
+.cs-center-info-wrap {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid var(--gray-eb);
+    border-radius: 4px;
+    background: var(--gray-f9);
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: -0.05em;
 }
 
 /*
