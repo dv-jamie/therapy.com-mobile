@@ -157,10 +157,6 @@
     line-height: 20px;
     letter-spacing: -0.05em;
 }
-.page-information > .paragraph {
-    font-size: 12px;
-    line-height: 16px;
-}
 .paragraph:not(:last-of-type) {
     margin-bottom: 20px;
 }

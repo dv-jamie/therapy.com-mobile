@@ -115,7 +115,7 @@
 .checkbox-icon {
     cursor: pointer;
 }
-.delete-selected-item-button {
+.table-assistant-button {
     margin-top: 10px;
     padding: 10px 20px;
     border: 1px solid var(--gray-d9);
@@ -128,7 +128,7 @@
 }
 
 /*
-셀 크기 및 텍스트 정렬 개별 조정
+셀 개별 조정
 */
 .my-person-info-table .title-cell {
     width: 670px;
@@ -157,6 +157,13 @@
 }
 .scrap-employment-table .company-name-cell {
     width: 100px;
+}
+
+.qna-table .title-cell {
+    width: 750px;
+}
+.qna-table .status-cell {
+    cursor: pointer;
 }
 
 .align-left {
