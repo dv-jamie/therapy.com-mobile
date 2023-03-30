@@ -124,3 +124,114 @@
 .additional-info {
     color: var(--gray-84);
 }
+
+/*
+회원정보 관리
+*/
+.manage-user-container {
+    width: 488px;
+    margin: 0 auto;
+}
+.manage-user-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-gray); 
+}
+.manage-user-title {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+}
+.manage-user-title-wrap > button {
+    border: none;
+    background: none;
+    color: var(--gray-8e);
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    border: 1px solid var(--gray-d9);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.input-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+}
+.input-wrap-left {
+    width: 70%;
+}
+.input-wrap:not(:last-of-type) {
+    border-bottom: 1px solid var(--gray-d9);
+}
+.input-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--gray-aa);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+}
+.input-wrap input {
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    border: none;
+    outline: none;
+}
+
+.show-input-button {
+    width: 30px;
+    color: var(--gray-aa);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+}
+.certification-button {
+    width: 125px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    border: none;
+    background: var(--gray-ef);
+    color: var(--gray-c8);
+}
+.yellow-button {
+    background: var(--sub-yellow);
+    border: 1px solid var(--primary-yellow);
+    color: var(--gray-393434);
+    cursor: pointer;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 20px;
+}
+.button-wrap > .button {
+    flex: 1;
+    height: 60px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: -0.05em;
+}
+.button-wrap > .gray-button {
+    border: none;
+    background: var(--primary-gray); 
+    color: #fff;
+    cursor: pointer;
+}
