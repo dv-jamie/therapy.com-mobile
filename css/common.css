@@ -304,3 +304,52 @@
     font-size: 16px;
     line-height: -0.05em;
 }
+
+/*
+카드 ui
+*/
+.two-columns-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card-wrap {
+    width: calc(50% - 10px);
+    padding: 10px 20px;
+    border: 1px solid var(--gray-d9);
+    border-radius: 4px;
+}
+.card-thumbnail-wrap {
+    float: left;
+    margin-right: 20px;
+    width: 136px;
+    height: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.card-company-name {
+    margin: 10px 0 6px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+}
+.card-title {
+    margin-bottom: 6px;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+}
+.card-additional-info {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+}
+.card-additional-info > span {
+    color: var(--primary-green);
+}
+.card-additional-info-wrap > img {
+    float: right;
+}
