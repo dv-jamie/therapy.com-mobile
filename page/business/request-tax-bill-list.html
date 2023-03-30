@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테라피닷컴 - 업체회원</title>
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="/css/snb.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+</head>
+
+<body>
+    <header id="header" class="container header-container"></header>
+    <nav id="gnb" class="gnb-container"></nav>
+
+    <div class="content-container">
+        <aside id="snb" class="snb-container business-snb"></aside>
+        <main id="main" class="main-container">
+            <!-- 신청내역 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">신청내역</h6>
+                </div>
+
+                <table class="table requset-history-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td">신청일</td>
+                            <td class="td">기업명</td>
+                            <td class="td register-number-cell">사업자등록번호</td>
+                            <td class="td">공급가액</td>
+                            <td class="td">세액</td>
+                            <td class="td">상태</td>
+                        </tr>
+                    </thead>
+
+                    <!-- 데이터 없을 경우 -->
+                    <!-- <tbody class="tbody">
+                        <tr class="tbody-row no-data-row">
+                            <td class="td" colspan="6">
+                                <p>신청 내역이 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody> -->
+
+                    <!-- 데이터 있을 경우 -->
+                    <tbody>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">2023.03.15</td>
+                            <td class="td">북경아로마 </td>
+                            <td class="td register-number-cell">2561512345</td>
+                            <td class="td">59,266원</td>
+                            <td class="td">5,927원</td>
+                            <td class="td">신청완료</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 신청내역 끝 -->
+
+            <!-- 페이지 내비게이션 -->
+            <ul class="page-navi">
+                <li class="current-page">1</li>
+                <!-- 아이콘 대체 필요 -->
+                <li>></li>
+                <!-- 아이콘 대체 필요 -->
+                <li>>></li>
+            </ul>
+            <!-- 페이지 내비게이션 끝 -->
+
+            <div class="request-button-wrap">
+                <button class="request-button">신청하기</button>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer" class="footer-container"></footer>
+
+    <script type="text/javascript" src="../../setLayout.js"></script>
+</body>
+
+</html>

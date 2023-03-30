@@ -19,6 +19,11 @@
 .table-title > .count {
     color: var(--primary-blue);
 }
+.sub-title {
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--gray-62);
+}
 .table-more-button {
     border: none;
     background: none;
@@ -143,6 +148,11 @@
 .checkbox-icon {
     cursor: pointer;
 }
+
+.request-button-wrap {
+    margin-top: 60px;
+    text-align: center;
+}
 .table-assistant-button {
     margin-top: 10px;
     border: 1px solid var(--gray-d9);
@@ -159,10 +169,15 @@
     width: 100%;
     height: 100%;
 }
-.sub-title {
-    margin-top: 4px;
+.request-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: var(--primary-blue);
     font-size: 14px;
-    color: var(--gray-62);
+    letter-spacing: -0.05em;
+    color: #fff;
+    cursor: pointer;
 }
 
 /*
@@ -219,6 +234,10 @@
 
 .participate-personn-list-table .title-cell {
     width: 450px;
+}
+
+.requset-history-table .register-number-cell {
+    width: 370px;
 }
 
 .align-left {
