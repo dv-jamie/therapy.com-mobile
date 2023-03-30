@@ -92,7 +92,7 @@
 }
 
 /*
-페이지 안내, 비밀번호 안내
+페이지 안내, 비밀번호 변경 안내
 */
 .page-information {
     width: 100%;
@@ -214,6 +214,45 @@
 .password-input-wrap input {
     width: 70%;
 }
+
+/* 회원정보 관리 - 회원탈퇴 */
+.withdrawal-information {
+    padding: 20px;
+    background: var(--gray-f9);
+}
+.withdrawal-information-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+}
+.withdrawal-paragraph {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+}
+.withdrawal-paragraph:last-of-type {
+    margin-bottom: 0px;
+}
+.withdrawal-paragraph-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    margin-bottom: 4px;
+}
+.withdrawal-paragraph-desc {
+    color: var(--gray-7d);
+}
+.caution-text {
+    margin: 10px 0 20px;
+    color: var(--primary-red);
+    font-size: 12px;
+    letter-spacing: -0.05em;
+}
+
+/* 회원정보 관리 - 버튼 스타일 */
 .show-input-button {
     width: 30px;
     color: var(--gray-aa);
@@ -246,7 +285,6 @@
     color: #fff;
     cursor: pointer;
 }
-
 .button-wrap {
     display: flex;
     justify-content: space-between;
