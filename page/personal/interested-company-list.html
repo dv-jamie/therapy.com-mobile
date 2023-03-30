@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테라피닷컴 - 개인회원</title>
+
+    <!-- font -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/gnb.css">
+    <link rel="stylesheet" type="text/css" href="/css/snb.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/mypage.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+</head>
+
+<body>
+    <header id="header" class="container header-container"></header>
+    <nav id="gnb" class="gnb-container"></nav>
+
+    <div class="content-container">
+        <aside id="snb" class="snb-container"></aside>
+        <main id="main" class="main-container">
+            <!-- 내 인재정보 관심업체 -->
+            <div class="table-container">
+                <div class="table-title-wrap">
+                    <h6 class="table-title">내 인재정보 관심 업체</h6>
+                </div>
+
+                <table class="table interested-company-table">
+                    <thead class="thead">
+                        <tr class="thead-row">
+                            <td class="td company-name-cell">업체명</td>
+                            <td class="td recruiting-info-cell">진행중 공고</td>
+                            <td class="td">지역</td>
+                            <td class="td">보기</td>
+                        </tr>
+                    </thead>
+
+                    <!-- 데이터 없을 경우 -->
+                    <!-- <tbody class="tbody">
+                        <tr class="tbody-row no-data-row">
+                            <td class="td" colspan="4">
+                                <p>등록된 관심업체가 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody> -->
+
+                    <!-- 데이터 있을 경우 -->
+                    <tbody>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                        <tr class="tbody-row">
+                            <td class="td">
+                                <div class="company-name-cell ellipsis">
+                                    루트에스테틱
+                                </div>
+                            </td>
+                            <td class="td">
+                                <div class="recruiting-info-cell ellipsis align-left">
+                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
+                                </div>
+                            </td>
+                            <td class="td">서울</td>
+                            <td class="td">
+                                <button class="show-detail-button">상세보기</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 내 인재정보 관심업체 끝 -->
+
+            <!-- 페이지 안내 -->
+            <div class="page-information">
+                <ul class="paragraph">
+                    <h6 class="paragraph-title">
+                        [인재정보 안내]
+                    </h6>
+
+                    <li class="paragraph-list">
+                        <span class="list-style"></span>
+                        인재정보는 최대 1개까지 작성하여 관리할 수 있습니다.
+                    </li>
+                    <li class="paragraph-list">
+                        <span class="list-style"></span>
+                        인재정보는 무료로 등록 하실 수 있습니다.
+                    </li>
+                    <li class="paragraph-list">
+                        <span class="list-style"></span>
+                        성명 따로 공개되지 않으며, 전화번호는 010-****-1234로 표기됩니다.
+                    </li>
+                    <li class="paragraph-list">
+                        <span class="list-style"></span>
+                        인재정보는 관심샵 등록한 업체가 8개가 다 차면 구직완료로 전환됩니다.
+                    </li>
+                </ul>
+
+                <ul class="paragraph">
+                    <h6 class="paragraph-title">
+                        [주의사항]
+                    </h6>
+
+                    <li class="paragraph-list">
+                        <span class="list-style"></span>
+                        상기 인재정보는 구인구직목적으로만 이용할 수 있습니다.
+                        <span class="additional-info">
+                            (위반 시 관련 법령에 의거하여 처벌받거나 이용약관에 의거하여 손해배상을 청구합니다.)
+                        </span>
+                    </li>
+                    <li class="paragraph-list">
+                        <span class="list-style"></span>
+                        기재오류 또는 허위기재 등에 대한 책임은 작성자 본인에게 있습니다.
+                    </li>
+                    <li class="paragraph-list">
+                        <span class="list-style"></span>
+                        무단으로 사용할 수 없으며, 저작권법에 의거하여 법적 책임을 물을 수 있습니다.
+                    </li>
+                </ul>
+            </div>
+            <!-- 페이지 안내 끝 -->
+        </main>
+    </div>
+
+    <footer id="footer" class="footer-container"></footer>
+
+    <script type="text/javascript" src="../../setLayout.js"></script>
+</body>
+
+</html>

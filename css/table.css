@@ -1,6 +1,6 @@
 .table-container {
     width: 1100px;
-    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 /*
@@ -15,6 +15,9 @@
     font-weight: 700;
     font-size: 20px;
     letter-spacing: -0.05em;
+}
+.table-title > .count {
+    color: var(--primary-blue);
 }
 .table-more-button {
     border: none;
@@ -35,6 +38,7 @@
     transform: translateY(-2.5px) rotate(45deg);
 }
 
+
 /*
 테이블 영역
 */
@@ -49,7 +53,9 @@
     background: var(--gray-f5);
 }
 .td {
-    padding: 17px 5px;
+    padding: 0 5px;
+    height: 50px;
+    vertical-align: middle;
 }
 
 .tbody-row {
@@ -59,7 +65,7 @@
     letter-spacing: -0.05em;
 }
 
-.no-data-row > .tbody-cell {
+.no-data-row > .td {
     padding: 60px 0;
 }
 .table-create-data-button {
@@ -88,6 +94,22 @@
     text-overflow: ellipsis;
 }
 
+.table .manage-button {
+    width: 63px;
+    height: 30px;
+    color: var(--gray-62);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.table .edit-button {
+    border: 1px solid var(--gray-d9);
+    background: none;
+}
+.table .delete-button {
+    border: none;
+    background: var(--gray-d9);
+}
+
 /*
 셀 크기 및 텍스트 정렬 개별 조정
 */
@@ -100,7 +122,6 @@
 }
 .interested-company-table .recruiting-info-cell {
     width: 730px;
-    text-align: left;
 }
 
 .recommend-table .company-name-cell {
@@ -108,5 +129,12 @@
 }
 .recommend-table .title-cell {
     width: 710px;
+}
+
+.manage-person-info-table .title-cell {
+    width: 540px;
+}
+
+.align-left {
     text-align: left;
 }
