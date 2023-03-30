@@ -1,3 +1,17 @@
+.hide {
+    display: none;
+}
+
+.overlap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
 .red-text {
     color: var(--primary-red);
 }
@@ -451,4 +465,46 @@
 }
 .card-additional-info-wrap > img {
     float: right;
+}
+
+/*
+세금계산서 신청 모달
+*/
+.request-tax-bill-modal {
+    position: absolute;
+    top: 216px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 60px 40px;
+    width: 548px;
+    background: #fff;
+    z-index: 100;
+}
+.close-modal-button {
+    position: absolute;
+    border: none;
+    background: none;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+.select-box-wrap {
+    width: 90%;
+    cursor: pointer;
+}
+.select-box-wrap > li > img {
+    float: right;
+    transform: translateY(2px);
+}
+.select-option-wrap {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -1px;
+    width: 51%;
+    border: 1px solid var(--gray-d9);
+    border-radius: 4px;
+    background: #fff;
+}
+.select-option-wrap > li {
+    padding: 10px 5px;
 }
