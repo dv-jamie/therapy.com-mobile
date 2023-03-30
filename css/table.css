@@ -117,7 +117,6 @@
 }
 .table-assistant-button {
     margin-top: 10px;
-    padding: 10px 20px;
     border: 1px solid var(--gray-d9);
     border-radius: 4px;
     background: none;
@@ -125,6 +124,12 @@
     letter-spacing: -0.05em;
     color: var(--gray-62);
     cursor: pointer;
+}
+.table-assistant-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
 }
 
 /*
@@ -164,6 +169,10 @@
 }
 .qna-table .status-cell {
     cursor: pointer;
+}
+
+.report-table .title-cell {
+    width: 650px;
 }
 
 .align-left {
