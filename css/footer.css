@@ -40,13 +40,12 @@ footer-link-wrap
     align-items: center;
     margin-bottom: 30px;
 }
-.section-title > span {
+.section-title {
     font-weight: 600;
     font-size: 20px;
     letter-spacing: -0.05em;
 }
-.count {
-    margin-right: -3px;
+.section-title > .count {
     color: var(--primary-yellow);
 }
 .more-button {
