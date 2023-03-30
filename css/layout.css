@@ -16,10 +16,15 @@
 }
 .snb-container {
     width: 260px;
-    height: 754px;
     border: 1px solid var(--gray-d9);
     border-radius: 6px;
     overflow: hidden;
+}
+.personal-snb {
+    height: 754px;
+}
+.business-snb {
+    height: 896px;
 }
 .main-container {
     width: 1100px;
