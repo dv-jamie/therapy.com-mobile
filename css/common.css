@@ -92,18 +92,28 @@
 }
 
 /*
-페이지 안내란
+페이지 안내, 비밀번호 안내
 */
 .page-information {
     width: 100%;
-    /* margin-top: 60px; */
     padding: 20px;
     border: 1px solid var(--gray-cb);
+}
+.password-information {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-eb);
+    background: var(--gray-f9);
 }
 .paragraph {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.05em;
+}
+.page-information > .paragraph {
+    font-size: 12px;
+    line-height: 16px;
 }
 .paragraph:not(:last-of-type) {
     margin-bottom: 20px;
@@ -111,6 +121,9 @@
 .paragraph-title {
     margin-bottom: 2px;
     font-weight: 700;
+}
+.password-information-title {
+    margin-bottom: 10px;
 }
 .list-style {
     display: inline-block;
@@ -166,8 +179,14 @@
     align-items: center;
     padding: 10px 14px;
 }
+.password-input-wrap {
+    padding: 23px 20px;
+}
 .input-wrap-left {
     width: 70%;
+}
+.password-input-wrap .input-wrap-left {
+    width: 100%;
 }
 .input-wrap:not(:last-of-type) {
     border-bottom: 1px solid var(--gray-d9);
@@ -180,6 +199,11 @@
     font-size: 12px;
     letter-spacing: -0.05em;
 }
+.password-input-wrap .input-label {
+    display: inline-block;
+    font-size: 14px;
+    width: 110px;
+}
 .input-wrap input {
     width: 100%;
     font-weight: 500;
@@ -187,7 +211,9 @@
     border: none;
     outline: none;
 }
-
+.password-input-wrap input {
+    width: 70%;
+}
 .show-input-button {
     width: 30px;
     color: var(--gray-aa);
@@ -214,12 +240,23 @@
     color: var(--gray-393434);
     cursor: pointer;
 }
+.gray-button {
+    border: none;
+    background: var(--primary-gray); 
+    color: #fff;
+    cursor: pointer;
+}
 
 .button-wrap {
     display: flex;
     justify-content: space-between;
     gap: 8px;
+}
+.button-wrap-padding-top {
     padding-top: 20px;
+}
+.edit-password-button-wrap {
+    padding-top: 0px;
 }
 .button-wrap > .button {
     flex: 1;
@@ -228,10 +265,4 @@
     font-weight: 500;
     font-size: 16px;
     line-height: -0.05em;
-}
-.button-wrap > .gray-button {
-    border: none;
-    background: var(--primary-gray); 
-    color: #fff;
-    cursor: pointer;
 }
