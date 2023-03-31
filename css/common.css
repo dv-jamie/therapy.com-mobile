@@ -13,13 +13,13 @@
 }
 
 .red-text {
-    color: var(--primary-red);
+    color: var(--primary-red) !important;
 }
 .green-text {
-    color: var(--primary-green);
+    color: var(--primary-green) !important;
 }
 .blue-text {
-    color: var(--primary-blue);
+    color: var(--primary-blue) !important;
 }
 .bold-text {
     font-weight: bold;
@@ -27,6 +27,10 @@
 .underline-text {
     text-decoration: underline;
 }
+
+/*
+홈페이지
+*/
 
 .page-title-wrap {
     margin-bottom: 10px;
