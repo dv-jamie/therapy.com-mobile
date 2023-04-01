@@ -30,6 +30,14 @@ time, mark, audio, video {
 html {
 	font-size: 62.5%;
 }
+body {
+	background: var(--gray-f6);
+	-ms-overflow-style: none;
+ }
+ 
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -38,7 +46,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-	background: var(--gray-f6);
 }
 ol, ul {
     list-style: none;
