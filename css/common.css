@@ -1,33 +1,3 @@
-.hide {
-    display: none !important;
-}
-
-.overlap {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.red-text {
-    color: var(--primary-red) !important;
-}
-.green-text {
-    color: var(--primary-green) !important;
-}
-.blue-text {
-    color: var(--primary-blue) !important;
-}
-.bold-text {
-    font-weight: 700;
-}
-.underline-text {
-    text-decoration: underline;
-}
-
 /*
 헤더 영역
 (홈페이지 헤더 따로 관리 : /css/header.css)
@@ -118,7 +88,14 @@ section
     font-size: 1.4rem;
     line-height: 1.5rem;
     letter-spacing: -0.07rem;
-    word-break: keep-all;
+    /* ↓ 단어 단위로 줄바꿈 원할 시 추가 */
+    /* word-break: keep-all; */
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .card-additional-info-wrap {
     display: flex;
@@ -126,6 +103,7 @@ section
     align-items: center;
 }
 .card-additional-info {
+    color: var(--gray-6c);
     font-weight: 500;
     font-size: 1.2rem;
     letter-spacing: -0.06rem;
@@ -144,6 +122,25 @@ section
 }
 .card-additional-info-wrap > img {
     float: right;
+}
+
+/*
+로그아웃, 고객센터 버튼 영역
+*/
+.logout-button-wrap {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 60px;
+}
+.logout-button-wrap .button {
+    flex: 1;
+    height: 4.6rem;
+    border: 1px solid var(--gray-eb);
+    border-radius: 10px;
+    background: #fff;
+    color: var(--gray-62);
+    font-size: 1.4rem;
+    letter-spacing: -0.07rem;
 }
 
 /*
@@ -201,55 +198,66 @@ section
 }
 
 /*
-인재정보 요약 영역
+메뉴 바로가기 영역
 */
-.summary-wrap {
+.main-menu-wrap {
+    margin-top: 20px;
     padding: 10px;
     border-radius: 15px;
     background: var(--primary-yellow);
 }
 .my-info-wrap {
-    margin-bottom: 15px;
+    margin-bottom: calc(-32px + 15px);
     padding: 15px;
     border-radius: 15px;
     background: var(--sub-yellow);
     color: var(--gray-312e27);
 }
-.my-info-wrap > .title {
+.main-menu-wrap .title {
     font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 5px;
     letter-spacing: -0.07rem;
 }
-.my-info-wrap > .desc {
+.main-menu-wrap .desc {
     font-size: 1.2rem;
     letter-spacing: -0.06rem;
 }
 
-.summary-link-wrap {
+.menu-link-wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 15px 0;
+    margin-top: 31px;
 }
-.summary-link {
+.menu-link {
     flex: 50%;
 }
-.summary-link .icon-wrap {
+.menu-link > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-link .icon-wrap {
     display: inline-block;
-    margin-right: 3px;
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 10px;
     background: #fff;
     text-align: center;
 }
-.summary-link .icon-wrap > .icon {
+.menu-link .icon-wrap > .plus-icon {
     display: inline-block;
     width: 1rem;
     height: 1rem;
     transform: translateY(50%);
 }
-.summary-link .icon-wrap > .text {
+.menu-link .icon-wrap > .icon {
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(25%);
+}
+.menu-link .icon-wrap > .text {
     display: inline-block;
     font-size: 1.3rem;
     transform: translateY(50%);
@@ -259,22 +267,77 @@ section
     font-weight: 700;
     font-size: 1.4rem;
     letter-spacing: -0.07rem;
-    transform: translateY(50%);
 }
 
-/* 로그아웃, 고객센터 버튼 영역 */
-.logout-button-wrap {
-    display: flex;
-    gap: 10px;
-    margin: 30px 0 60px;
-}
-.logout-button-wrap .button {
-    flex: 1;
-    height: 4.6rem;
+/*
+진행 유료 서비스 영역
+*/
+.paid-info-wrap {
+    padding: 15px;
+    border-radius: 15px;
     border: 1px solid var(--gray-eb);
-    border-radius: 10px;
     background: #fff;
-    color: var(--gray-62);
-    font-size: 1.4rem;
-    letter-spacing: -0.07rem;
+}
+.paid-status {
+    display: inline-block;
+    padding: 3px 7px;
+    border-radius: 3px;
+    background: var(--primary-blue);
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: -0.06rem;
+}
+.paid-name {
+    margin: 10px 0;
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 1.6rem;
+    letter-spacing: -0.08rem;
+}
+.paid-desc-wrap {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: -0.06rem;
+}
+
+/*
+재선언
+*/
+.hide {
+    display: none !important;
+}
+.overlap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.red-text {
+    color: var(--primary-red) !important;
+}
+.orange-text {
+    color: var(--primary-orange) !important;
+}
+.green-text {
+    color: var(--primary-green) !important;
+}
+.blue-text {
+    color: var(--primary-blue) !important;
+}
+.bold-text {
+    font-weight: 700 !important;
+}
+.underline-text {
+    text-decoration: underline !important;
+}
+
+.blue-background {
+    background: var(--primary-blue) !important;
+    color: #fff !important;
 }
