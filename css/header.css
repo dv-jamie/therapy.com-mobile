@@ -1,21 +1,94 @@
-.header {
+/*
+앱 다운로드 배너
+*/
+.app-download-banner-wrap {
+    background: rgba(255, 214, 0, 0.15);
+    font-family: 'Pretendard', '-apple-system', 'Noto Sans KR', 'sans-serif';
+}
+.app-download-banner-wrap > .content-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1400px;
-    margin: 0 auto;
-    font-size: 14px;
+    padding: 15px;
+}
+.app-download-banner-wrap img {
+    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(0.3rem);
+}
+.app-download-banner-wrap .close-button {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.app-download-banner-wrap .symbol {
+    width: 4rem;
+}
+.app-download-banner-wrap .banner-title {
+    display: inline-block;
+    transform: translateY(-0.3rem);
+}
+.app-download-banner-wrap .banner-title > h6 {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--gray-252d32);
+}
+.app-download-banner-wrap .banner-title > p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--gray-57);
 }
 
+.app-download-banner-wrap .app-download-button {
+    padding: 10px 15px;
+    border: 1px solid var(--primary-yellow) ;
+    border-radius: 50px;
+    background: var(--sub-yellow);
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+}
+.app-download-banner-wrap .app-download-button > img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+/*
+헤더 영역
+*/
+.header > .content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12.5px 15px;
+}
+    
+.header-logo .symbol {
+    width: 2.5rem;
+}
+.header-logo .logotype {
+    width: 9.3rem;
+    transform: translateY(-0.3rem);
+}
 .search-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    width: 500px;
-    height: 50px;
-    padding: 10px;
-    border: 1px solid var(--primary-gray);
+    width: 20rem;
+    height: 30px;
+    padding: 4px;
+    border: 1px solid var(--gray-d9);
     border-radius: 100px;
 }
 .search-bar > input {
@@ -25,31 +98,7 @@
     border: none;
 }
 .search-bar > img {
-    width: 38px;
-    height: 38px;
+    width: 2.2rem;
+    height: 2.2rem;
     cursor: pointer;
-}
-
-.header-user-info {
-    display: inline-block;
-    padding: 0 20px;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-}
-.user-info-login {
-    position: relative;
-}
-.user-info-login > a {
-    margin-left: 6px;
-}
-.user-info-login::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 8px;
-    background: var(--primary-gray);
 }

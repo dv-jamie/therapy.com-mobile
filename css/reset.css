@@ -67,8 +67,9 @@ a:active {
 
 /* 폰트 적용 */
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
     color: var(--primary-gray);
+	font-size: 1.6rem;
 }
 
 /* variable */
@@ -83,6 +84,7 @@ body {
 	--primary-gray: #312E27;
 	--gray-252d32: #252D32;
 	--gray-393434: #393434;
+	--gray-57: #575757;
 	--gray-62: #626262;
 	--gray-68: #686868;
 	--gray-74: #747474;
@@ -105,6 +107,7 @@ body {
 	--gray-eb: #EBEBEB;
 	--gray-e6: #E6E6E6;
 	--gray-ef: #EFEFEF;
+	--gray-f2: #F2F2F2;
 	--gray-f4: #F4F4F4;
 	--gray-f5: #F5F5F5;
 	--gray-f6: #F6F6F6;

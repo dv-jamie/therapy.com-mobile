@@ -1,5 +1,5 @@
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .overlap {
@@ -31,7 +31,6 @@
 /*
 홈페이지
 */
-
 .page-title-wrap {
     margin-bottom: 10px;
     padding-bottom: 20px;
