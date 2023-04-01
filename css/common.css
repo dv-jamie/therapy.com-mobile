@@ -58,16 +58,15 @@ section
     min-width: 360px;
     overflow-x: auto;
 }
-.card-content-wrap {
+.card-horizon-content-wrap {
     display: flex;
     gap: 6px;
 }
-.card-content-wrap::-webkit-scrollbar {
+.card-horizon-content-wrap::-webkit-scrollbar {
     display: none;
 }
 .card-list {
     margin-bottom: 5px;
-    padding: 16px 15px;
     min-width: 345px;
     border-radius: 15px;
     border: 1px solid var(--gray-eb);
@@ -75,6 +74,9 @@ section
 }
 .card-horizon-wrap .card-list {
     display: inline-block;
+}
+.card-content-wrap {
+    padding: 20px;
 }
 .card-company-name {
     font-weight: 900;
@@ -97,6 +99,22 @@ section
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+.card-title-h3 {
+    min-width: 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: -0.09rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-date-wrap {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    letter-spacing: -0.065rem;
+}
+
 .card-additional-info-wrap {
     display: flex;
     justify-content: space-between;
@@ -122,6 +140,70 @@ section
 }
 .card-additional-info-wrap > img {
     float: right;
+}
+
+.card-button-wrap {
+    display: flex;
+    border-top: 1px solid var(--gray-eb);
+}
+.card-button-wrap > .button {
+    flex: 1;
+    padding: 16px;
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.card-button-wrap > .button > .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: -20%;
+}
+
+/*
+카드 ui 상태 칩
+*/
+.card-status-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.status-chip,
+.status-chip-gray {
+    display: inline-block;
+    padding: 3px 7px;
+    border-radius: 3px;
+    background: var(--primary-blue);
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: -0.06rem;
+}
+.status-chip-gray {
+    background: var(--gray-cb);
+}
+.card-status-wrap .right {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.055rem;
+}
+
+/*
+버튼 ui
+*/
+.full-button {
+    margin-top: 5px;
+    width: 100%;
+    height: 58px;
+    border-radius: 15px;
+    border: 1px solid var(--primary-yellow);
+    background: var(--sub-yellow);
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: -0.09rem;
+}
+.yellow-button {
+    background: var(--sub-yellow);
 }
 
 /*
@@ -278,15 +360,6 @@ section
     border: 1px solid var(--gray-eb);
     background: #fff;
 }
-.paid-status {
-    display: inline-block;
-    padding: 3px 7px;
-    border-radius: 3px;
-    background: var(--primary-blue);
-    color: #fff;
-    font-size: 1.1rem;
-    letter-spacing: -0.06rem;
-}
 .paid-name {
     margin: 10px 0;
     font-weight: 700;
@@ -300,6 +373,37 @@ section
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: -0.06rem;
+}
+
+/* 페이지 안내 영역 */
+.page-information {
+    width: 100%;
+    margin: 30px 0 60px;
+    padding: 20px;
+    border: 1px solid var(--gray-eb);
+    border-radius: 15px;
+    background: #fff;
+    font-size: 1.3rem;
+    letter-spacing: -0.065px;
+}
+.paragraph:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.paragraph-title {
+    font-weight: 700;
+}
+.show-list-style {
+    margin-left: 25px;
+    list-style: disc;
+}
+.show-list-style::marker {
+    font-size: 0.6rem;
+}
+.list-style-number {
+    margin: 0 3px 0 3px;
+}
+.additional-info {
+    color: var(--gray-84);
 }
 
 /*

@@ -73,17 +73,20 @@ a:active {
     text-decoration: none;
 }
 
-/* 폰트 적용 */
 body {
-	font-family: 'Noto Sans KR', sans-serif;
-    color: var(--primary-gray);
+	color: var(--primary-gray);
 	font-size: 1.6rem;
+}
+
+/* 폰트 적용 */
+body * {
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* variable */
 :root {
-	--primary-yellow: #FFD600;
-	--sub-yellow: #FFE663;
+	--primary-yellow: #FFDB1F;
+	--sub-yellow: #FFE24A;
 	--primary-red: #FF3500;
 	--sub-red: #E83B15;
 	--primary-orange: #D64F2D;

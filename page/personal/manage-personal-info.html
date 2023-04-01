@@ -11,129 +11,105 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="/css/snb.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/table.css">
 </head>
 
 <body>
     <header id="header" class="container header-container"></header>
     <nav id="gnb" class="gnb-container"></nav>
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container personal-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
             <!-- 인재정보관리 -->
-            <div class="table-container">
-                <div class="table-title-wrap">
-                    <h6 class="table-title">인재정보 관리</h6>
-                </div>
+            <ul class="manage-card-wrap">
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-status-wrap">
+                            <!-- 구직중일 경우 status-chip -->
+                            <!-- 구직완료일 경우 status-chip-gray -->
+                            <span class="status-chip">구직중</span>
+                            <div class="right">
+                                등록업체
+                                <span class="orange-text underline-text">6</span>
+                            </div>
+                        </div>
+    
+                        <h3 class="card-title-h3">
+                            성남 아로마샵 일자리 구해요~ 자격증있어요
+                        </h3>
+    
+                        <div class="card-date-wrap">
+                            <span class="bold-text">최종수정일</span>
+                            2023.03.16
+                        </div>
+                    </div>
+                    
+                    <div class="card-button-wrap">
+                        <button class="button">
+                            <img class="icon" src="/icons/trashcan.svg" alt="삭제 아이콘" />
+                            삭제
+                        </button>
+                        <button class="button">
+                            <img class="icon" src="/icons/pencil.svg" alt="수정 아이콘" />
+                            수정
+                        </button>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-status-wrap">
+                            <!-- 구직중일 경우 status-chip -->
+                            <!-- 구직완료일 경우 status-chip-gray -->
+                            <span class="status-chip-gray">구직완료</span>
+                            <div class="right">
+                                등록업체
+                                <span class="orange-text underline-text">8</span>
+                            </div>
+                        </div>
+    
+                        <h3 class="card-title-h3">
+                            성남 아로마샵 일자리 구해요~ 자격증있어요
+                        </h3>
+    
+                        <div class="card-date-wrap">
+                            <span class="bold-text">최종수정일</span>
+                            2023.03.10
+                        </div>
+                    </div>
+                    
+                    <div class="card-button-wrap">
+                        <button class="button">
+                            <img class="icon" src="/icons/trashcan.svg" alt="삭제 아이콘" />
+                            삭제
+                        </button>
+                        <button class="button">
+                            <img class="icon" src="/icons/pencil.svg" alt="수정 아이콘" />
+                            수정
+                        </button>
+                    </div>
+                </li>
+            </ul>
 
-                <table class="table manage-person-info-table">
-                    <thead class="thead">
-                        <tr class="thead-row">
-                            <td class="td title-cell">인재정보제목</td>
-                            <td class="td">관심업체수</td>
-                            <td class="td">최종 수정일</td>
-                            <td class="td">인재정보등록일</td>
-                            <td class="td">관리</td>
-                        </tr>
-                    </thead>
-
-                    <!-- 데이터 없을 경우 -->
-                    <!-- <tbody class="tbody">
-                        <tr class="tbody-row no-data-row">
-                            <td class="td" colspan="5">
-                                <p>등록된 인재정보가 없습니다.</p>
-                                <button class="table-create-data-button">인재정보 등록</button>
-                            </td>
-                        </tr>
-                    </tbody> -->
-
-                    <!-- 데이터 있을 경우 -->
-                    <tbody>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="title-cell ellipsis">24살 강남에서 일하고 싶습니당</div>
-                            </td>
-                            <td class="td">8</td>
-                            <td class="td">2023-03-14</td>
-                            <td class="td">2023-03-10</td>
-                            <td class="td">
-                                <button class="manage-button  edit-button">수정</button>
-                                <button class="manage-button delete-button">삭제</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="title-cell ellipsis">24살 강남에서 일하고 싶습니당</div>
-                            </td>
-                            <td class="td">8</td>
-                            <td class="td">2023-03-14</td>
-                            <td class="td">2023-03-10</td>
-                            <td class="td">
-                                <button class="manage-button  edit-button">수정</button>
-                                <button class="manage-button delete-button">삭제</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="title-cell ellipsis">24살 강남에서 일하고 싶습니당</div>
-                            </td>
-                            <td class="td">8</td>
-                            <td class="td">2023-03-14</td>
-                            <td class="td">2023-03-10</td>
-                            <td class="td">
-                                <button class="manage-button  edit-button">수정</button>
-                                <button class="manage-button delete-button">삭제</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="title-cell ellipsis">24살 강남에서 일하고 싶습니당</div>
-                            </td>
-                            <td class="td">8</td>
-                            <td class="td">2023-03-14</td>
-                            <td class="td">2023-03-10</td>
-                            <td class="td">
-                                <button class="manage-button  edit-button">수정</button>
-                                <button class="manage-button delete-button">삭제</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="title-cell ellipsis">24살 강남에서 일하고 싶습니당</div>
-                            </td>
-                            <td class="td">8</td>
-                            <td class="td">2023-03-14</td>
-                            <td class="td">2023-03-10</td>
-                            <td class="td">
-                                <button class="manage-button  edit-button">수정</button>
-                                <button class="manage-button delete-button">삭제</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <button class="full-button">
+                인재정보 등록하기 +
+            </button>
             <!-- 인재정보관리 끝 -->
 
-            <!-- 페이지 안내 -->
+            <!-- 페이지 안내 영역 -->
             <div class="page-information">
                 <ul class="paragraph">
                     <h6 class="paragraph-title">
                         [인재정보 안내]
                     </h6>
-
                     <li class="paragraph-list show-list-style">
-                        인재정보는 최대 1개까지 작성하여 관리할 수 있습니다.
+                        인재정보는 여러개 등록이 가능합니다.
                     </li>
                     <li class="paragraph-list show-list-style">
                         인재정보는 무료로 등록 하실 수 있습니다.
                     </li>
                     <li class="paragraph-list show-list-style">
-                        성명 따로 공개되지 않으며, 전화번호는 010-****-1234로 표기됩니다.
+                        성명 따로 공개되지 않으며, 전화번호는 010-****-**34로 표기됩니다.
                     </li>
                     <li class="paragraph-list show-list-style">
                         인재정보는 관심샵 등록한 업체가 8개가 다 차면 구직완료로 전환됩니다.
@@ -159,7 +135,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- 페이지 안내 끝 -->
+            <!-- 페이지 안내 영역 끝 -->
         </main>
     </div>
 
