@@ -2,22 +2,30 @@
 헤더 영역
 (홈페이지 헤더 따로 관리 : /css/header.css)
 */
+.sub-header-container,
 .main-header-container {
     display: flex;
     justify-content: space-between;
     max-width: 750px;
     min-width: 360px;
-    height: 21.7rem;
     margin: 0 auto;
-    padding: 15px 15px 0;
     background: #fff;
+}
+.main-header-container {
+    padding: 15px 15px 0;
+    height: 21.7rem;
     border-radius: 0 0 20px 20px;
 }
+.sub-header-container {
+    padding: 15px;
+    border-bottom: 1px solid var(--gray-eb);
+}
+
 .header-title {
     font-weight: 700;
     font-size: 1.8rem;
 }
-.header-close-icon {
+.header-icon {
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -71,6 +79,13 @@ section
     border-radius: 15px;
     border: 1px solid var(--gray-eb);
     background: #fff;
+}
+.no-data-card {
+    padding: 73px 0;
+    color: var(--gray-99);
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: -0.07px;
 }
 .card-horizon-wrap .card-list {
     display: inline-block;
