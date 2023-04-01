@@ -11,221 +11,146 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="/css/snb.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/table.css">
 </head>
 
 <body>
-    <header id="header" class="container header-container"></header>
-    <nav id="gnb" class="gnb-container"></nav>
+    <!-- 헤더 영역 -->
+    <header id="header" class="sub-header-container">
+        <img class="header-icon" src="/icons/arrow-left.svg" alt="뒤로가기 아이콘" />
+        <h1 class="header-title">내 인재정보 관심업체</h1>
+    </header>
+    <!-- 헤더 영역 끝 -->
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container personal-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
-            <!-- 내 인재정보 관심업체 -->
-            <div class="table-container">
-                <div class="table-title-wrap">
-                    <h6 class="table-title">내 인재정보 관심 업체</h6>
-                </div>
-
-                <table class="table interested-company-table">
-                    <thead class="thead">
-                        <tr class="thead-row">
-                            <td class="td company-name-cell">업체명</td>
-                            <td class="td recruiting-info-cell">진행중 공고</td>
-                            <td class="td">지역</td>
-                            <td class="td">보기</td>
-                        </tr>
-                    </thead>
-
-                    <!-- 데이터 없을 경우 -->
-                    <!-- <tbody class="tbody">
-                        <tr class="tbody-row no-data-row">
-                            <td class="td" colspan="4">
-                                <p>등록된 관심업체가 없습니다.</p>
-                            </td>
-                        </tr>
-                    </tbody> -->
-
-                    <!-- 데이터 있을 경우 -->
-                    <tbody>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="recruiting-info-cell ellipsis align-left">
-                                    마포 신촌 초건전 테라피 매장 [루트에스테틱] 마사지 관리사 구인 | 마포 마사지구인, 마포 체형관리사 구인, 마포 피부관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- 내 인재정보 관심업체 끝 -->
-
-            <!-- 페이지 안내 -->
-            <div class="page-information">
-                <ul class="paragraph">
-                    <h6 class="paragraph-title">
-                        [인재정보 안내]
-                    </h6>
-
-                    <li class="paragraph-list show-list-style">
-                        인재정보는 최대 1개까지 작성하여 관리할 수 있습니다.
-                    </li>
-                    <li class="paragraph-list show-list-style">
-                        인재정보는 무료로 등록 하실 수 있습니다.
-                    </li>
-                    <li class="paragraph-list show-list-style">
-                        성명 따로 공개되지 않으며, 전화번호는 010-****-1234로 표기됩니다.
-                    </li>
-                    <li class="paragraph-list show-list-style">
-                        인재정보는 관심샵 등록한 업체가 8개가 다 차면 구직완료로 전환됩니다.
-                    </li>
-                </ul>
-
-                <ul class="paragraph">
-                    <h6 class="paragraph-title">
-                        [주의사항]
-                    </h6>
-
-                    <li class="paragraph-list show-list-style">
-                        상기 인재정보는 구인구직목적으로만 이용할 수 있습니다.
-                        <span class="additional-info">
-                            (위반 시 관련 법령에 의거하여 처벌받거나 이용약관에 의거하여 손해배상을 청구합니다.)
-                        </span>
-                    </li>
-                    <li class="paragraph-list show-list-style">
-                        기재오류 또는 허위기재 등에 대한 책임은 작성자 본인에게 있습니다.
-                    </li>
-                    <li class="paragraph-list show-list-style">
-                        무단으로 사용할 수 없으며, 저작권법에 의거하여 법적 책임을 물을 수 있습니다.
-                    </li>
-                </ul>
-            </div>
-            <!-- 페이지 안내 끝 -->
+            <ul class="card-wrap">
+                <!-- 데이터 없을 경우 -->
+                <!-- <li class="card-list no-data-small-card">
+                    등록된 리스트가 없습니다.
+                </li> -->
+                
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </main>
     </div>
 

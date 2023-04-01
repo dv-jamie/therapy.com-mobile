@@ -87,6 +87,13 @@ section
     font-size: 1.4rem;
     letter-spacing: -0.07px;
 }
+.no-data-small-card {
+    padding: 43px 0;
+    color: var(--gray-99);
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: -0.07px;
+}
 .card-horizon-wrap .card-list {
     display: inline-block;
 }
