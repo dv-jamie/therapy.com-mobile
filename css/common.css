@@ -24,6 +24,7 @@
 .header-title {
     font-weight: 700;
     font-size: 1.8rem;
+    letter-spacing: -0.09rem;
 }
 .header-icon {
     width: 2.5rem;
@@ -224,6 +225,16 @@ section
     font-size: 1.8rem;
     letter-spacing: -0.09rem;
 }
+.full-button-2 {
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--primary-yellow);
+    background: var(--sub-yellow);
+    font-weight: 500;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    letter-spacing: -0.07rem;
+}
 .button-wrap {
     display: flex;
     gap: 5px;   
@@ -260,6 +271,12 @@ section
     background: none;
     color: var(--gray-8e);
     text-decoration: underline;
+}
+.caution-text {
+    margin: 10px 0 30px;
+    color: var(--sub-red);
+    font-size: 1.2rem;
+    letter-spacing: -0.06rem;
 }
 
 /*
@@ -534,6 +551,37 @@ input ui
 }
 
 /*
+회원탈퇴 안내
+*/
+.withdrawal-information {
+    margin: 15px;
+    padding: 25px 15px;
+    border-top: 1px solid var(--primary-gray);
+    background: #fff;
+}
+.withdrawal-information-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: -0.08rem;
+}
+.withdrawal-paragraph:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.withdrawal-paragraph-title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -0.07rem;
+}
+.withdrawal-paragraph-desc {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.07rem;
+    color: var(--gray-7d);
+}
+
+/*
 재선언
 */
 .hide {
@@ -579,6 +627,7 @@ input ui
     color: var(--gray-393434) !important;
 }
 .blue-button {
+    border: none !important;
     background: var(--primary-blue) !important;
     color: #fff !important;
 }
