@@ -11,339 +11,184 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="/css/snb.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/table.css">
 </head>
 
 <body>
-    <header id="header" class="container header-container"></header>
-    <nav id="gnb" class="gnb-container"></nav>
+    <!-- 헤더 영역 -->
+    <header id="header" class="sub-header-container">
+        <img class="header-icon" src="/icons/arrow-left.svg" alt="뒤로가기 아이콘" />
+        <h1 class="header-title">스크랩한 채용정보</h1>
+    </header>
+    <!-- 헤더 영역 끝 -->
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container personal-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
-            <!-- 스크랩 채용정보 -->
-            <div class="table-container">
-                <div class="table-title-wrap">
-                    <h6 class="table-title">
-                        스크랩 채용정보 : 총 <span class="count">147</span>건
-                    </h6>
-                </div>
+            <div class="list-count-wrap">
+                <h6 class="list-count">
+                    총 <span class="blue-text">6</span>건
+                </h6>
 
-                <table class="table scrap-employment-table">
-                    <thead class="thead">
-                        <tr class="thead-row">
-                            <td class="td">
-                                <img src="/icons/checkbox.svg" />
-                            </td>
-                            <td class="td company-name-cell">업체명</td>
-                            <td class="td title-cell">제목</td>
-                            <td class="td">급여</td>
-                            <td class="td">지역</td>
-                            <td class="td">보기</td>
-                        </tr>
-                    </thead>
-
-                    <!-- 데이터 없을 경우 -->
-                    <!-- <tbody class="tbody">
-                        <tr class="tbody-row no-data-row">
-                            <td class="td" colspan="6">
-                                <p>스크랩한 채용정보가 없습니다.</p>
-                            </td>
-                        </tr>
-                    </tbody> -->
-
-                    <!-- 데이터 있을 경우 -->
-                    <tbody>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    에스파
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    수원 내 업계최고 페이!, 삼성전자 인근 콜넘쳐요! | 수원 마사지구인, 수원 피부관리사 구인 |경기 수원시 영통구 신원로294번길
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 수원</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    중심스웨디시
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    시흥 정왕동 중심스웨디시 스웨디시 마사지구인 | 고페이보장 당일지급 | ♥갯수보장♥ 시흥배곧신도시 스웨디시 알바 구인
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 시흥</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    볼륨테라피(VL테라피)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    수원 영통 No.1 소프트샵 볼륨테라피 스웨디시 마사지구인구직 | 수원 피부관리사 구인, 수원 체형관리사 구인
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 수원</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    퍼스트클래스테라피
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    강남 퍼스트클래스 /관리쌤급구/리뉴얼 재오픈 | 강남 압구정 마사지구인, 스웨디시구인, 피부관리사구인 | 서울 강남구 언주로172길 66
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">서울 강남</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    로데오스웨디시테라피
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    라보떼테라피
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    탑시크릿
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    루트에스테틱
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    청담더타이
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    청라오아시스
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    수테라피
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집 합니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row closed-row">
-                            <td class="td">
-                                <img class="checkbox-icon" src="/icons/checkbox.svg" alt="체크박스 아이콘" />
-                            </td>
-                            <td class="td">
-                                <div class="company-name-cell ellipsis">
-                                    클래식
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    제휴종료된 업체입니다.
-                                </div>
-                            </td>
-                            <td class="td">
-                                <span class="green-text">일</span> 50만
-                            </td>
-                            <td class="td">경기 일산</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <button class="table-assistant-button">선택삭제</button>
-
-                <!-- 페이지 내비게이션 -->
-                <ul class="page-navi">
-                    <li class="current-page">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>
-                        <img src="/icons/navi-arrow-right.svg" alt="화살표 아이콘" />
-                    </li>
-                    <li>
-                        <img src="/icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
-                    </li>
-                </ul>
-                <!-- 페이지 내비게이션 끝 -->
+                <button class="delete-button">
+                    <img class="icon" src="/icons/trashcan.svg" alt="휴지통 아이콘" />
+                    <span class="text">전체삭제</span>
+                </button>
             </div>
-            <!-- 스크랩 채용정보 끝 -->
+
+            <ul class="card-wrap">
+                <div class="list-date">2023.03.14</div>
+                
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="card-wrap">
+                <div class="list-date">2023.03.10</div>
+
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-company-name">
+                            로데오스웨디시테라피
+                        </div>
+                        <div class="card-title">
+                            일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                        </div>
+                        <div class="card-additional-info-wrap">
+                            <div class="card-additional-info">
+                                경기 고양 ∙
+                                <span class="green-text">일</span>
+                                80만 원
+                            </div>
+                            <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </main>
     </div>
 
