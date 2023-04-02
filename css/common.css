@@ -221,7 +221,7 @@ section
 .card-button-wrap > .button > .icon {
     width: 1.8rem;
     height: 1.8rem;
-    vertical-align: -20%;
+    vertical-align: -0.2rem;
 }
 
 /*
@@ -314,7 +314,8 @@ section
     text-decoration: underline;
 }
 
-.delete-button{
+.sorting-button,
+.delete-button {
     padding: 6px 10px;
     border-radius: 5px;
     border: 1px solid var(--gray-d9);
@@ -322,6 +323,12 @@ section
     font-weight: 500;
     font-size: 1.4rem;
     letter-spacing: -0.07rem;
+}
+.sorting-button > .icon {
+    margin-left: 5px;
+    width: 0.8rem;
+    height: 0.5rem;
+    vertical-align: 0.2rem;
 }
 .delete-button > .icon {
     width: 1.4rem;
@@ -336,7 +343,7 @@ section
     font-size: 1.4rem;
     color: #000;
     letter-spacing: -0.07rem;
-    vertical-align: 20%;
+    vertical-align: 0.2rem;
 }
 
 /*
@@ -427,6 +434,40 @@ input ui
     color: var(--gray-62);
     font-size: 1.4rem;
     letter-spacing: -0.07rem;
+}
+
+/*
+페이지 내비게이션
+*/
+.page-navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 30px;
+    text-align: center;
+}
+.page-navi > li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1px;
+    border: 1px solid var(--gray-d9);
+    background: #fff;
+    color: var(--primary-gray);
+    font-size: 1.4rem;
+    letter-spacing: -0.07rem;
+}
+.page-navi > li.current-page {
+    border: none;
+    background: var(--primary-gray);
+    color: #fff;
+}
+.page-navi .icon {
+    width: 1.6rem;
+    height: 1.6rem;
 }
 
 /*

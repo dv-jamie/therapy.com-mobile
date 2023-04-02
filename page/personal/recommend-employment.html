@@ -11,432 +11,129 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="/css/snb.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/table.css">
 </head>
 
 <body>
-    <header id="header" class="container header-container"></header>
-    <nav id="gnb" class="gnb-container"></nav>
+    <!-- 헤더 영역 -->
+    <header id="header" class="sub-header-container">
+        <img class="header-icon" src="/icons/arrow-left.svg" alt="뒤로가기 아이콘" />
+        <h1 class="header-title">추천 채용정보</h1>
+    </header>
+    <!-- 헤더 영역 끝 -->
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container personal-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
-            <!-- 추천채용정보 -->
-            <div class="table-container">
-                <div class="page-title-wrap">
-                    <h6 class="page-title">
-                        추천채용정보
-                    </h6>
-                </div>
+            <div class="list-count-wrap">
+                <h6 class="list-count">
+                    총 <span class="blue-text">116</span>건
+                </h6>
 
-                <ul class="two-columns-card-wrap">
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <!-- <img src="/icons/star.svg" alt="스크랩 아이콘" /> -->
-                                <img src="/icons/star-fill.svg" alt="스크랩 아이콘" />
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-wrap">
-                        <div class="card-thumbnail-wrap">
-                            <img src="/images/aespa_thumb.png" alt="추천채용정보 썸네일 이미지" />
-                        </div>
-                        <div class="card-desc-wrap">
-                            <div class="card-company-name">
-                                로데오스웨디시테라피
-                            </div>
-                            <div class="card-title">
-                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
-                            </div>
-                            <div class="card-additional-info-wrap">
-                                <div class="card-additional-info">
-                                    경기 고양 ∙ <span>일</span> 80만 원
-                                </div>
-                                <img src="/icons/star.svg" alt="스크랩 아이콘" />
-                                <!-- <img src="/icons/star-fill.svg" alt="스크랩 아이콘" /> -->
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <button class="sorting-button">
+                    <span class="text">정렬조건</span>
+                    <img class="icon" src="/icons/arrow-down-fill.svg" alt="화살표 아래 아이콘" />
+                </button>
             </div>
-            <!-- 추천채용정보 끝 -->
+
+            <ul class="card-wrap">
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-company-name">
+                                로데오스웨디시테라피
+                            </div>
+                            <div class="card-title">
+                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    경기 고양 ∙
+                                    <span class="green-text">일</span>
+                                    80만 원
+                                </div>
+                                <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-company-name">
+                                로데오스웨디시테라피
+                            </div>
+                            <div class="card-title">
+                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    경기 고양 ∙
+                                    <span class="green-text">일</span>
+                                    80만 원
+                                </div>
+                                <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-company-name">
+                                로데오스웨디시테라피
+                            </div>
+                            <div class="card-title">
+                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    경기 고양 ∙
+                                    <span class="green-text">일</span>
+                                    80만 원
+                                </div>
+                                <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-company-name">
+                                로데오스웨디시테라피
+                            </div>
+                            <div class="card-title">
+                                일산 장항동 로데오스웨디시에서 함께 근무하실 관리사님 모집합니다.
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    경기 고양 ∙
+                                    <span class="green-text">일</span>
+                                    80만 원
+                                </div>
+                                <img class="icon" src="/icons/star-fill.svg" alt="별 아이콘" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 페이지 내비게이션 -->
+            <ul class="page-navi">
+                <li class="current-page">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>
+                    <img class="icon" src="/icons/navi-arrow-right.svg" alt="화살표 아이콘" />
+                </li>
+                <li>
+                    <img class="icon" src="/icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
+                </li>
+            </ul>
+            <!-- 페이지 내비게이션 끝 -->
         </main>
     </div>
 
