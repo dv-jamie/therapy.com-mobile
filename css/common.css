@@ -224,8 +224,113 @@ section
     font-size: 1.8rem;
     letter-spacing: -0.09rem;
 }
-.yellow-button {
-    background: var(--sub-yellow);
+.button-wrap {
+    display: flex;
+    gap: 5px;   
+}
+.half-button {
+    flex: 1;
+    margin-top: 10px;
+    height: 45px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-gray);
+    color: #fff;
+    letter-spacing: -0.07rem;
+}
+.show-input-button {
+    color: var(--gray-aa);
+    font-size: 1.4rem;
+    letter-spacing: -0.07rem;
+}
+.input-button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -0.07rem;
+    color: var(--gray-c8);
+}
+.withdrawal-button {
+    display: block;
+    margin: 30px auto 0;
+    border: none;
+    background: none;
+    color: var(--gray-8e);
+    text-decoration: underline;
+}
+
+/*
+input ui
+*/
+.input-container {
+    margin: 0 auto;
+}
+.input-group {
+    margin-bottom: 20px;
+    border: 1px solid var(--gray-d9);
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+.input-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+}
+.input-wrap:not(:last-of-type) {
+    border-bottom: 1px solid var(--gray-d9);
+}
+.input-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--gray-aa);
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: -0.055rem;
+}
+.input-wrap .input {
+    width: 100%;
+    color: var(--gray-393434);
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -0.05em;
+    border: none;
+    outline: none;
+}
+.textarea-group {
+    height: 212px;
+}
+.textarea-group .input-wrap-left {
+    width: 100%;
+}
+.textarea-group textarea {
+    display: inline-block;
+    width: 100%;
+    height: 170px;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.input-desc {
+    margin: -10px 0 20px 0;
+    color: var(--gray-62);
+    font-size: 12px;
+    letter-spacing: -0.05em;
+}
+
+/* 아이디 입력창 */
+.input-wrap-uid {
+    background: var(--gray-f3);
+}
+.input-wrap-uid .input {
+    background: none;
+    color: var(--gray-aa);
 }
 
 /*
@@ -466,4 +571,10 @@ section
 .blue-background {
     background: var(--primary-blue) !important;
     color: #fff !important;
+}
+
+.yellow-button {
+    border: 1px solid var(--primary-yellow) !important;
+    background: var(--sub-yellow) !important;
+    color: var(--gray-393434) !important;
 }
