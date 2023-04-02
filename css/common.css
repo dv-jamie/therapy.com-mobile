@@ -73,15 +73,14 @@ section
     font-size: 1.6rem;
     letter-spacing: -0.08px;
 }
-
-.list-date {
-    margin: 25px 0 10px;
-    font-weight: 500;
-    font-size: 1.4rem;
-    letter-spacing: -0.07rem;
-    color: var(--gray-62);
+.checkbox-icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
+.card-wrap {
+    margin-top: 10px;
+}
 .card-horizon-wrap {
     max-width: 750px;
     min-width: 360px;
@@ -94,6 +93,15 @@ section
 .card-horizon-content-wrap::-webkit-scrollbar {
     display: none;
 }
+
+.list-date {
+    margin: 25px 0 10px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -0.07rem;
+    color: var(--gray-62);
+}
+
 .card-list {
     margin-bottom: 10px;
     min-width: 345px;
@@ -101,6 +109,19 @@ section
     border: 1px solid var(--gray-eb);
     background: #fff;
 }
+.card-horizon-wrap .card-list {
+    display: inline-block;
+}
+
+.card-content-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox-icon-wrap {
+    display: inline-block;
+}
+
 .no-data-card {
     padding: 73px 0;
     color: var(--gray-99);
@@ -115,11 +136,9 @@ section
     font-size: 1.4rem;
     letter-spacing: -0.07px;
 }
-.card-horizon-wrap .card-list {
-    display: inline-block;
-}
+
 .card-content-wrap {
-    padding: 20px;
+    padding: 15px;
 }
 .card-company-name {
     font-weight: 900;
@@ -153,7 +172,7 @@ section
 }
 
 .card-date-wrap {
-    margin-top: 10px;
+    margin: 10px 0 5px;
     font-size: 1.3rem;
     letter-spacing: -0.065rem;
 }
@@ -294,6 +313,7 @@ section
     color: var(--gray-8e);
     text-decoration: underline;
 }
+
 .delete-button{
     padding: 6px 10px;
     border-radius: 5px;
@@ -309,6 +329,14 @@ section
 }
 .delete-button > .text {
     vertical-align: 0.2rem;
+}
+
+.checkbox-wrap > .text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #000;
+    letter-spacing: -0.07rem;
+    vertical-align: 20%;
 }
 
 /*
