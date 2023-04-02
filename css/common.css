@@ -578,3 +578,7 @@ input ui
     background: var(--sub-yellow) !important;
     color: var(--gray-393434) !important;
 }
+.blue-button {
+    background: var(--primary-blue) !important;
+    color: #fff !important;
+}
