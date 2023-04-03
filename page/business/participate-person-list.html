@@ -11,383 +11,120 @@
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/common.css">
     <link rel="stylesheet" type="text/css" href="../../css/layout.css">
-    <link rel="stylesheet" type="text/css" href="../../css/header.css">
     <link rel="stylesheet" type="text/css" href="../../css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="../../css/snb.css">
     <link rel="stylesheet" type="text/css" href="../../css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../../css/table.css">
 </head>
 
 <body>
-    <header id="header" class="container header-container"></header>
-    <nav id="gnb" class="gnb-container"></nav>
+    <!-- 헤더 영역 -->
+    <header id="header" class="sub-header-container">
+        <img class="header-icon" src="../../icons/arrow-left.svg" alt="뒤로가기 아이콘" />
+        <h1 class="header-title">인재정보 참여내역</h1>
+    </header>
+    <!-- 헤더 영역 끝 -->
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container business-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
-            <!-- 인재정보 참여내역 -->
-            <div class="table-container">
-                <div class="table-title-wrap">
-                    <h6 class="table-title">인재정보 참여내역</h6>
-                </div>
-
-                <div class="participate-status-wrap">
-                    <div class="participate-status">
-                        <div class="status-text-group">
-                            총 참여횟수 :
-                            <span class="blue-text underline-text">18건</span>
-                        </div>
-                        <div class="status-text-group">
-                            남은 잔여횟수 :
-                            <span class="blue-text underline-text">2건</span>
-                        </div>
+            <ul class="card-wrap">
+                <!-- 데이터 없을 경우 -->
+                <!-- <li class="card-list no-data-small-card">
+                    등록된 리스트가 없습니다.
+                </li> -->
+                
+                <li class="card-list participate-person-list">
+                    <div class="left">
+                        총 참여횟수 :
+                        <span class="underline-text blue-text">118건</span>
+                        남은 잔여횟수 :
+                        <span class="underline-text blue-text">18건</span>
                     </div>
 
-                    <div class="charge-wrap">
+                    <div class="right">
                         <img class="icon" src="../../icons/folder-plus.svg" alt="충전 아이콘" />
-                        <span class="underline-text">충전하기</span>
+                        <span class="text">충전하기</span>
                     </div>
-                </div>
+                </li>
 
-                <table class="table participate-personn-list-table">
-                    <thead class="thead">
-                        <tr class="thead-row">
-                            <td class="td">번호</td>
-                            <td class="td company-name-cell">인재정보</td>
-                            <td class="td title-cell">제목</td>
-                            <td class="td">현황</td>
-                            <td class="td">지역</td>
-                            <td class="td">보기</td>
-                        </tr>
-                    </thead>
-
-                    <!-- 데이터 없을 경우 -->
-                    <!-- <tbody class="tbody">
-                        <tr class="tbody-row no-data-row">
-                            <td class="td" colspan="6">
-                                <p>참여한 인재정보가 없습니다.</p>
-                            </td>
-                        </tr>
-                    </tbody> -->
-
-                    <!-- 데이터 있을 경우 -->
-                    <tbody>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">20</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-company-name">
+                                남자 관리사 구직 희망해요!!
+                            </div>
+                            <div class="card-title">
+                                스웨디시 실장으로 1년 있었는데 어깨너머로 조금 조금 보면서 해본적있습니다 가르쳐주시면 열심히 일해보겠습니다 연락부탁드립니다
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <!-- '남'일 경우 blue-text 클래스명 추가 -->
+                                    <!-- '여'일 경우 orange-text 클래스명 추가 -->
+                                    <span class="blue-text">남 ∙</span>
+                                    서울 ∙
+                                    스웨디시
                                 </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-company-name">
+                                28살 초보입니다.
+                            </div>
+                            <div class="card-title">
+                                초보입니다 평일 10~5시까지 가능한곳 찾습니다 건전샵에서 일하고 싶습니다 경기, 강남쪽으로 알아보고있습니다ㅜㅜ
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <!-- '남'일 경우 blue-text 클래스명 추가 -->
+                                    <!-- '여'일 경우 orange-text 클래스명 추가 -->
+                                    <span class="orange-text">여 ∙</span>
+                                    경기 ∙
+                                    스웨디시
                                 </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">19</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-company-name">
+                                강남 아로마 (초보입니다ㅜㅜ)
+                            </div>
+                            <div class="card-title">
+                                강남으로 알아보고있습니다! 강남에 있는 샵에서 연락기다리겠습니다! (초보라 알려주시면 열심히 하겠습니다ㅜㅜ)
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <!-- '남'일 경우 blue-text 클래스명 추가 -->
+                                    <!-- '여'일 경우 orange-text 클래스명 추가 -->
+                                    <span class="orange-text">여 ∙</span>
+                                    서울 ∙
+                                    아로마
                                 </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">18</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">17</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">16</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">15</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">14</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">13</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">12</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">11</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">10</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">9</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">8</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">7</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row two-line-row">
-                            <td class="td">6</td>
-                            <td class="td">
-                                <div class="ellipsis">
-                                    010-****-**83<br />
-                                    (여, 35세)
-                                </div>
-                            </td>
-                            <td class="td">
-                                <div class="title-cell ellipsis align-left">
-                                    <p>노원건대쪽에서 마사지알바 구해봅니다</p>
-                                    <p class="sub-title">스포츠마사지・일급 20만원</p>
-                                </div>
-                            </td>
-                            <td class="td">구직중</td>
-                            <td class="td">서울</td>
-                            <td class="td">
-                                <button class="detail-button">상세보기</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
             <!-- 페이지 내비게이션 -->
             <ul class="page-navi">
-                <li class="current-page">1</li>
+                <li class="current-page-blue">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
                 <li>
-                    <img src="../../icons/navi-arrow-right.svg" alt="화살표 아이콘" />
+                    <img class="icon" src="../../icons/navi-arrow-right.svg" alt="화살표 아이콘" />
                 </li>
                 <li>
-                    <img src="../../icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
+                    <img class="icon" src="../../icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
                 </li>
             </ul>
             <!-- 페이지 내비게이션 끝 -->
-            <!-- 인재정보 참여내역 끝 -->
         </main>
     </div>
 

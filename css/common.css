@@ -132,6 +132,28 @@ section
     display: inline-block;
 }
 
+.participate-person-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 18px 15px;
+    font-size: 1.4rem;
+    letter-spacing: -0.07rem;
+}
+.participate-person-list .left > span {
+    margin-right: 7px;
+}
+.participate-person-list .right > .icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.participate-person-list .right > .text {
+    color: var(--gray-7d);
+    vertical-align: 15%;
+    text-decoration: underline;
+}
+
 .no-data-card {
     padding: 73px 0;
     color: var(--gray-99);
@@ -492,6 +514,12 @@ input ui
 .page-navi > li.current-page {
     border: none;
     background: var(--primary-gray);
+    color: #fff;
+}
+.page-navi > li.current-page-blue {
+    font-weight: 400;
+    border: none;
+    background: var(--primary-blue);
     color: #fff;
 }
 .page-navi .icon {
