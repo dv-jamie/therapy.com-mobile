@@ -19,237 +19,145 @@
     <!-- 헤더 영역 -->
     <header id="header" class="sub-header-container">
         <img class="header-icon" src="../../icons/arrow-left.svg" alt="뒤로가기 아이콘" />
-        <h1 class="header-title">세금계산서 신청내역</h1>
+        <h1 class="header-title">세금계산서 신청</h1>
     </header>
     <!-- 헤더 영역 끝 -->
 
     <div class="view-wrap">
         <main id="main" class="main-container">
-            <ul class="manage-card-wrap">
-                <!-- 신청전 : card-list -->
-                <!-- 신청완료 : disabled-card-list -->
-                <li class="card-list">
-                    <div class="card-content-wrap">
-                        <div class="card-content">
-                            <div class="card-status-wrap">
-                                <!-- 신청전 : status-chip -->
-                                <!-- 신청완료 : status-chip-gray -->
-                                <span class="status-chip">신청전</span>
-                                <div class="right">
-                                    신청일 2023.03.15
-                                </div>
-                            </div>
-        
-                            <h3 class="card-title-h3">
-                                북경아로마 2561512345
-                            </h3>
-        
-                            <div class="card-date-wrap">
-                                <div class="left">
-                                    <span>공급가액 : 59,266원</span>
-                                    <span>세액 : 5,927원</span>
-                                </div>
-                            </div>
+            <div class="input-container">
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div class="input-wrap-left">
+                            <label class="input-label">결제내역</label>
+                            <ul class="select-box-wrap">
+                                <li>
+                                    <span class="select-box-placeholder">선택해주세요</span>
+                                    <img src="/icons/arrow-down-fill.svg" alt="화살표 아이콘" />
+                                </li>
+
+                                <!-- '선택해주세요'선택 시 hide 클래스 제거 -->
+                                <ul class="select-option-wrap hide">
+                                    <li>옵션 1</li>
+                                    <li>옵션 2</li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                        <!-- 내역 확인 클릭 시 blue-button 클래스 제거 -->
+                        <button class="certification-button blue-button">내역 확인</button>
+                    </div>
+                </div>
+
+                <!-- 내역 확인 클릭 시 hide 클래스 제거 -->
+                <ul class="payment-history-desc hide">
+                    <li>
+                        <label>결제일</label>
+                        <span>2023-03-07 11:48:24</span>
+                    </li>
+                    <li>
+                        <label>결제금액</label>
+                        <span>65,193원</span>
+                    </li>
+                    <li>
+                        <label>세액</label>
+                        <span>5,927원</span>
+                    </li>
+                    <li>
+                        <label>공급가액</label>
+                        <span>59,266원</span>
+                    </li>
+                </ul>
+                
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">사업자등록번호</label>
+                            <input class="input" value="2561512345" disabled />
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-button-wrap">
-                        <button class="button">
-                            세금계산서 신청
-                        </button>
-                    </div>
-                </li>
-
-                <!-- 신청전 : card-list -->
-                <!-- 신청완료 : disabled-card-list -->
-                <li class="disabled-card-list">
-                    <div class="card-content-wrap">
-                        <div class="card-content">
-                            <div class="card-status-wrap">
-                                <!-- 신청전 : status-chip -->
-                                <!-- 신청완료 : status-chip-gray -->
-                                <span class="status-chip">신청전</span>
-                                <div class="right">
-                                    신청일 2023.03.15
-                                </div>
-                            </div>
-        
-                            <h3 class="card-title-h3">
-                                북경아로마 2561512345
-                            </h3>
-        
-                            <div class="card-date-wrap">
-                                <div class="left">
-                                    <span>공급가액 : 59,266원</span>
-                                    <span>세액 : 5,927원</span>
-                                </div>
-                            </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">종사업장 번호</label>
+                            <input class="input" placeholder="해당업체만 입력하세요"/>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-button-wrap">
-                        <button class="button">
-                            세금계산서 신청완료
-                        </button>
-                    </div>
-                </li>
-
-                <!-- 신청전 : card-list -->
-                <!-- 신청완료 : disabled-card-list -->
-                <li class="disabled-card-list">
-                    <div class="card-content-wrap">
-                        <div class="card-content">
-                            <div class="card-status-wrap">
-                                <!-- 신청전 : status-chip -->
-                                <!-- 신청완료 : status-chip-gray -->
-                                <span class="status-chip">신청전</span>
-                                <div class="right">
-                                    신청일 2023.03.15
-                                </div>
-                            </div>
-        
-                            <h3 class="card-title-h3">
-                                북경아로마 2561512345
-                            </h3>
-        
-                            <div class="card-date-wrap">
-                                <div class="left">
-                                    <span>공급가액 : 59,266원</span>
-                                    <span>세액 : 5,927원</span>
-                                </div>
-                            </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">상호</label>
+                            <input class="input" />
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-button-wrap">
-                        <button class="button">
-                            세금계산서 신청완료
-                        </button>
-                    </div>
-                </li>
-
-                <!-- 신청전 : card-list -->
-                <!-- 신청완료 : disabled-card-list -->
-                <li class="disabled-card-list">
-                    <div class="card-content-wrap">
-                        <div class="card-content">
-                            <div class="card-status-wrap">
-                                <!-- 신청전 : status-chip -->
-                                <!-- 신청완료 : status-chip-gray -->
-                                <span class="status-chip">신청전</span>
-                                <div class="right">
-                                    신청일 2023.03.15
-                                </div>
-                            </div>
-        
-                            <h3 class="card-title-h3">
-                                북경아로마 2561512345
-                            </h3>
-        
-                            <div class="card-date-wrap">
-                                <div class="left">
-                                    <span>공급가액 : 59,266원</span>
-                                    <span>세액 : 5,927원</span>
-                                </div>
-                            </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">대표자 성명</label>
+                            <input class="input" />
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-button-wrap">
-                        <button class="button">
-                            세금계산서 신청완료
-                        </button>
-                    </div>
-                </li>
-
-                <!-- 신청전 : card-list -->
-                <!-- 신청완료 : disabled-card-list -->
-                <li class="disabled-card-list">
-                    <div class="card-content-wrap">
-                        <div class="card-content">
-                            <div class="card-status-wrap">
-                                <!-- 신청전 : status-chip -->
-                                <!-- 신청완료 : status-chip-gray -->
-                                <span class="status-chip">신청전</span>
-                                <div class="right">
-                                    신청일 2023.03.15
-                                </div>
-                            </div>
-        
-                            <h3 class="card-title-h3">
-                                북경아로마 2561512345
-                            </h3>
-        
-                            <div class="card-date-wrap">
-                                <div class="left">
-                                    <span>공급가액 : 59,266원</span>
-                                    <span>세액 : 5,927원</span>
-                                </div>
-                            </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">사업장 주소</label>
+                            <input class="input" />
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-button-wrap">
-                        <button class="button">
-                            세금계산서 신청완료
-                        </button>
-                    </div>
-                </li>
-
-                <!-- 신청전 : card-list -->
-                <!-- 신청완료 : disabled-card-list -->
-                <li class="disabled-card-list">
-                    <div class="card-content-wrap">
-                        <div class="card-content">
-                            <div class="card-status-wrap">
-                                <!-- 신청전 : status-chip -->
-                                <!-- 신청완료 : status-chip-gray -->
-                                <span class="status-chip">신청전</span>
-                                <div class="right">
-                                    신청일 2023.03.15
-                                </div>
-                            </div>
-        
-                            <h3 class="card-title-h3">
-                                북경아로마 2561512345
-                            </h3>
-        
-                            <div class="card-date-wrap">
-                                <div class="left">
-                                    <span>공급가액 : 59,266원</span>
-                                    <span>세액 : 5,927원</span>
-                                </div>
-                            </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">업태</label>
+                            <input class="input" />
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-button-wrap">
-                        <button class="button">
-                            세금계산서 신청완료
-                        </button>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">종목</label>
+                            <input class="input" />
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </div>
 
-            <!-- 페이지 내비게이션 -->
-            <ul class="page-navi">
-                <li class="current-page-blue">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>
-                    <img class="icon" src="../../icons/navi-arrow-right.svg" alt="화살표 아이콘" />
-                </li>
-                <li>
-                    <img class="icon" src="../../icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
-                </li>
-            </ul>
-            <!-- 페이지 내비게이션 끝 -->
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <div>
+                            <label class="input-label">이메일</label>
+                            <input class="input" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-wrap">
+                    <button class="half-button blue-button">
+                        신청완료
+                    </button>
+                    <button class="half-button">
+                        신청취소
+                    </button>
+                </div>
+            </div>
+
+            <div class="cs-center-info-wrap">
+                궁금하신 사항은 고객센터
+                <span class="blue-text">1661-7170</span>
+                로 문의 바랍니다.
+            </div>
         </main>
     </div>
-
-    <footer id="footer" class="footer-container"></footer>
 
     <script type="text/javascript" src="../../setLayout.js"></script>
 </body>

@@ -395,6 +395,18 @@ section
     letter-spacing: -0.07rem;
     color: var(--gray-c8);
 }
+.certification-button {
+    padding: 10.5px 24px;
+    border-radius: 2px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -0.05em;
+    border: none;
+    background: var(--gray-ef);
+    color: var(--gray-c8);
+}
+
 .withdrawal-button {
     display: block;
     margin: 30px auto 0;
@@ -468,12 +480,20 @@ input ui
 }
 .input-wrap .input {
     width: 100%;
-    color: var(--gray-393434);
+    background: #fff;
+    color: var(--gray-62);
     font-weight: 500;
     font-size: 1.4rem;
     letter-spacing: -0.05em;
     border: none;
     outline: none;
+}
+.input-wrap .input::placeholder {
+    font-weight: 400;
+    color: var(--gray-62);
+}
+.input-wrap-left {
+    flex: 1;
 }
 .textarea-group {
     height: 212px;
@@ -505,6 +525,54 @@ input ui
 .input-wrap-uid .input {
     background: none;
     color: var(--gray-aa);
+}
+
+/* 세금계산서 신청 */
+.select-box-wrap {
+    cursor: pointer;
+}
+.select-box-wrap > li > img {
+    float: right;
+    width: 0.9rem;
+    transform: translateY(0.4rem);
+}
+.select-box-placeholder {
+    color: var(--gray-62);
+    font-size: 1.4rem;
+    line-height: -0.07px;
+}
+.select-option-wrap {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -1px;
+    width: 51%;
+    border: 1px solid var(--gray-d9);
+    border-radius: 4px;
+    background: #fff;
+}
+.select-option-wrap > li {
+    padding: 10px 5px;
+}
+.payment-history-desc {
+    margin: -5px 0 10px;
+    padding: calc(14px - 5px) 14px;
+    border: 1px solid var(--gray-d9);
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+}
+.payment-history-desc > li {
+    padding: 5px;
+}
+.payment-history-desc label {
+    display: inline-block;
+    width: 60px;
+    color: var(--gray-68);
+    font-weight: 500;
+}
+.payment-history-desc span {
+    color: #999;
 }
 
 /*
@@ -758,6 +826,17 @@ ol.paragraph > .paragraph-list::marker {
 
 .additional-info {
     color: var(--gray-84);
+}
+
+.cs-center-info-wrap {
+    margin: 30px 0 60px;
+    padding: 20px;
+    border: 1px solid var(--gray-eb);
+    border-radius: 2px;
+    background: var(--gray-f9);
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: -0.07em;
 }
 
 /*
