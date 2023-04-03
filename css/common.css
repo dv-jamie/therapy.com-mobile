@@ -103,14 +103,21 @@ section
 }
 
 .card-list {
+    position: relative;
     margin-bottom: 10px;
-    min-width: 345px;
     border-radius: 15px;
     border: 1px solid var(--gray-eb);
     background: #fff;
 }
 .card-horizon-wrap .card-list {
     display: inline-block;
+}
+.card-list .icon {
+    position: absolute;
+    right: 11.7px;
+    bottom: 11.7px;
+    width: 1.67rem;
+    height: 1.67rem;
 }
 
 .card-content-wrap {
@@ -199,11 +206,6 @@ section
 }
 .card-index-wrap > span {
     color: var(--primary-gray);
-}
-.card-additional-info-wrap > .icon {
-    float: right;
-    width: 1.67rem;
-    height: 1.67rem;
 }
 
 .card-button-wrap {
@@ -445,6 +447,7 @@ input ui
     align-items: center;
     gap: 7px;
     margin-top: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .page-navi > li {
@@ -655,7 +658,7 @@ input ui
 회원탈퇴 안내
 */
 .withdrawal-information {
-    margin: 15px;
+    margin: 15px 0;
     padding: 25px 15px;
     border-top: 1px solid var(--primary-gray);
     background: #fff;

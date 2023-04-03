@@ -83,7 +83,7 @@ footer-nav-wrap
     padding: 12px 12px 12px 0;
     color: #fff;
     font-size: 1.3rem;
-    letter-spacing: -0.07em;
+    letter-spacing: -0.05em;
 }
 .footer-nav > li:not(:first-of-type) {
     padding-left: 12px;
@@ -103,15 +103,19 @@ footer-nav-wrap
 footer-guide-section
 */
 .footer-guide-section {
-    padding: 37px 0 25px;
-    border-bottom: 1px solid var(--gray-d9);
     color: var(--gray-393434);
 }
 
 .cs-center-section {
+    margin-top: 10px;
+    padding: 25px;
+}
+.cs-center-section .content-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--gray-d9);
 }
 
 .cs-center-tel-wrap {
@@ -164,7 +168,10 @@ footer-company-info
     margin-left: 0.5rem;
     width: 11.3rem;
 }
-.company-info-wrap > .text {
+.company-info-wrap {
+    padding: 0 25px;
+}
+.company-info-wrap .text {
     color: var(--gray-7d);
     font-size: 1.3rem;
     line-height: 1.8rem;
