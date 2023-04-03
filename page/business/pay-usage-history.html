@@ -11,217 +11,243 @@
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/common.css">
     <link rel="stylesheet" type="text/css" href="../../css/layout.css">
-    <link rel="stylesheet" type="text/css" href="../../css/header.css">
     <link rel="stylesheet" type="text/css" href="../../css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="../../css/snb.css">
     <link rel="stylesheet" type="text/css" href="../../css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../../css/table.css">
 </head>
 
 <body>
-    <header id="header" class="container header-container"></header>
-    <nav id="gnb" class="gnb-container"></nav>
+    <!-- 헤더 영역 -->
+    <header id="header" class="sub-header-container">
+        <img class="header-icon" src="../../icons/arrow-left.svg" alt="뒤로가기 아이콘" />
+        <h1 class="header-title">유료이용내역</h1>
+    </header>
+    <!-- 헤더 영역 끝 -->
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container business-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
             <!-- 유료 이용현황 -->
-            <div class="table-container">
-                <div class="table-title-wrap">
-                    <h6 class="table-title">유료 이용현황</h6>
-                </div>
+            <ul class="manage-card-wrap">
+                <div class="list-title">유료 이용현황</div>
 
-                <table class="table usage-history-table">
-                    <thead class="thead">
-                        <tr class="thead-row">
-                            <td class="td">구분</td>
-                            <td class="td title-cell">광고내용</td>
-                            <td class="td">사용만료일</td>
-                            <td class="td">잔여일수</td>
-                            <td class="td">상태</td>
-                        </tr>
-                    </thead>
-
-                    <!-- 데이터 없을 경우 -->
-                    <!-- <tbody class="tbody">
-                        <tr class="tbody-row no-data-row">
-                            <td class="td" colspan="5">
-                                <p>진행중인 광고 내역이 없습니다.</p>
-                            </td>
-                        </tr>
-                    </tbody> -->
-
-                    <!-- 데이터 있을 경우 -->
-                    <tbody>
-                        <tr class="tbody-row">
-                            <td class="td">업체</td>
-                            <td class="td">
-                                <div class="title-cell ellipsis">
-                                    프리미어 3개월 55만원(이벤트)
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-content">
+                            <div class="card-status-wrap">
+                                <!-- 진행중 : status-chip -->
+                                <!-- 미승인 : status-chip-red -->
+                                <!-- 승인 : status-chip-gray -->
+                                <span class="status-chip">진행중</span>
+                            </div>
+        
+                            <h3 class="card-title-h3">
+                                프리미어 3개월 55만원(이벤트)
+                            </h3>
+        
+                            <div class="card-date-wrap">
+                                <div class="left">
+                                    <span>사용만료일</span>
+                                    <span class="red-text">2023.04.15</span>
                                 </div>
-                            </td>
-                            <td class="td red-text">2023.04.15</td>
-                            <td class="td">32일</td>
-                            <td class="td">진행중</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                                <div class="right">
+                                    <span>잔여일수</span>
+                                    <span class="red-text">32일</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
             <!-- 유료 이용현황 끝 -->
-            
-            <!-- 결제내역 -->
-            <div class="table-container">
-                <div class="table-title-wrap">
-                    <h6 class="table-title">결제내역</h6>
-                </div>
 
-                <table class="table usage-history-table">
-                    <thead class="thead">
-                        <tr class="thead-row">
-                            <td class="td">번호</td>
-                            <td class="td">결제방법</td>
-                            <td class="td">결제금액</td>
-                            <td class="td">승인일</td>
-                            <td class="td">결제상품</td>
-                            <td class="td">상태</td>
-                            <td class="td">신청</td>
-                        </tr>
-                    </thead>
+            <!-- 결제 내역 -->
+            <ul class="manage-card-wrap">
+                <div class="list-title">결제 내역</div>
 
-                    <!-- 데이터 없을 경우 -->
-                    <!-- <tbody class="tbody">
-                        <tr class="tbody-row no-data-row">
-                            <td class="td" colspan="7">
-                                <p>결제 내역이 없습니다.</p>
-                            </td>
-                        </tr>
-                    </tbody> -->
-
-                    <!-- 데이터 있을 경우 -->
-                    <tbody>
-                        <tr class="tbody-row">
-                            <td class="td">10</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">9</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">8</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">7</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">6</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">5</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">4</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">3</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">2</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">1</td>
-                            <td class="td">무통장입금 </td>
-                            <td class="td">550,000원</td>
-                            <td class="td">2023-03-14 14:36:55</td>
-                            <td class="td">프리미어 3개월 55만원(이벤트)</td>
-                            <td class="td">승인</td>
-                            <td class="td">
-                                <button class="detail-button">세금계산서</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- 결제내역 끝 -->
+                <li class="card-list paid-card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-content">
+                            <div class="card-status-wrap">
+                                <!-- 진행중 : status-chip -->
+                                <!-- 미승인 : status-chip-red -->
+                                <!-- 승인 : status-chip-gray -->
+                                <span class="status-chip-red">미승인</span>
+                                <div class="right">
+                                    승인일
+                                    <span class="red-text">-</span>
+                                </div>
+                            </div>
+        
+                            <h3 class="card-title-h3">
+                                프리미어 3개월 55만원(이벤트)
+                            </h3>
+        
+                            <div class="payment-detail-wrap">
+                                <div class="left">
+                                    <span>결제금액 : 550,000</span>
+                                    <span>결제방법 :</span>
+                                    <span class="payment-type">무통장입금</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-button-wrap">
+                        <button class="button">
+                            세금계산서 신청
+                        </button>
+                    </div>
+                </li>
+                <li class="card-list paid-card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-content">
+                            <div class="card-status-wrap">
+                                <!-- 진행중 : status-chip -->
+                                <!-- 미승인 : status-chip-red -->
+                                <!-- 승인 : status-chip-gray -->
+                                <span class="status-chip-gray">승인</span>
+                                <div class="right">
+                                    승인일
+                                    <span class="red-text">2023-03-14 14:36:55</span>
+                                </div>
+                            </div>
+        
+                            <h3 class="card-title-h3">
+                                프리미어 3개월 55만원(이벤트)
+                            </h3>
+        
+                            <div class="payment-detail-wrap">
+                                <div class="left">
+                                    <span>결제금액 : 550,000</span>
+                                    <span>결제방법 :</span>
+                                    <span class="payment-type">무통장입금</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-button-wrap">
+                        <button class="button button-disabled">
+                            세금계산서 신청완료
+                        </button>
+                    </div>
+                </li>
+                <li class="card-list paid-card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-content">
+                            <div class="card-status-wrap">
+                                <!-- 진행중 : status-chip -->
+                                <!-- 미승인 : status-chip-red -->
+                                <!-- 승인 : status-chip-gray -->
+                                <span class="status-chip-gray">승인</span>
+                                <div class="right">
+                                    승인일
+                                    <span class="red-text">2023-03-14 14:36:55</span>
+                                </div>
+                            </div>
+        
+                            <h3 class="card-title-h3">
+                                프리미어 3개월 55만원(이벤트)
+                            </h3>
+        
+                            <div class="payment-detail-wrap">
+                                <div class="left">
+                                    <span>결제금액 : 550,000</span>
+                                    <span>결제방법 :</span>
+                                    <span class="payment-type">무통장입금</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-button-wrap">
+                        <button class="button button-disabled">
+                            세금계산서 신청완료
+                        </button>
+                    </div>
+                </li>
+                <li class="card-list paid-card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-content">
+                            <div class="card-status-wrap">
+                                <!-- 진행중 : status-chip -->
+                                <!-- 미승인 : status-chip-red -->
+                                <!-- 승인 : status-chip-gray -->
+                                <span class="status-chip-gray">승인</span>
+                                <div class="right">
+                                    승인일
+                                    <span class="red-text">2023-03-14 14:36:55</span>
+                                </div>
+                            </div>
+        
+                            <h3 class="card-title-h3">
+                                프리미어 3개월 55만원(이벤트)
+                            </h3>
+        
+                            <div class="payment-detail-wrap">
+                                <div class="left">
+                                    <span>결제금액 : 550,000</span>
+                                    <span>결제방법 :</span>
+                                    <span class="payment-type">무통장입금</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-button-wrap">
+                        <button class="button button-disabled">
+                            세금계산서 신청완료
+                        </button>
+                    </div>
+                </li>
+                <li class="card-list paid-card-list">
+                    <div class="card-content-wrap">
+                        <div class="card-content">
+                            <div class="card-status-wrap">
+                                <!-- 진행중 : status-chip -->
+                                <!-- 미승인 : status-chip-red -->
+                                <!-- 승인 : status-chip-gray -->
+                                <span class="status-chip-gray">승인</span>
+                                <div class="right">
+                                    승인일
+                                    <span class="red-text">2023-03-14 14:36:55</span>
+                                </div>
+                            </div>
+        
+                            <h3 class="card-title-h3">
+                                프리미어 3개월 55만원(이벤트)
+                            </h3>
+        
+                            <div class="payment-detail-wrap">
+                                <div class="left">
+                                    <span>결제금액 : 550,000</span>
+                                    <span>결제방법 :</span>
+                                    <span class="payment-type">무통장입금</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-button-wrap">
+                        <button class="button button-disabled">
+                            세금계산서 신청완료
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <!-- 결제 내역 끝 -->
 
             <!-- 페이지 내비게이션 -->
             <ul class="page-navi">
-                <li class="current-page">1</li>
+                <li class="current-page-blue">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
                 <li>
-                    <img src="../../icons/navi-arrow-right.svg" alt="화살표 아이콘" />
+                    <img class="icon" src="../../icons/navi-arrow-right.svg" alt="화살표 아이콘" />
                 </li>
                 <li>
-                    <img src="../../icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
+                    <img class="icon" src="../../icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
                 </li>
             </ul>
             <!-- 페이지 내비게이션 끝 -->

@@ -97,12 +97,17 @@ section
     min-width: 360px;
 }
 
+.list-title,
 .list-date {
     margin: 25px 0 10px;
     font-weight: 500;
     font-size: 1.4rem;
     letter-spacing: -0.07rem;
     color: var(--gray-62);
+}
+.list-title {
+    font-weight: 700;
+    color: var(--primary-gray);
 }
 
 .card-list {
@@ -127,7 +132,9 @@ section
     display: flex;
     gap: 10px;
 }
-
+.card-content-wrap > .card-content {
+    flex: 1;
+}
 .checkbox-icon-wrap {
     display: inline-block;
 }
@@ -212,10 +219,28 @@ section
     text-overflow: ellipsis;
 }
 
+.payment-detail-wrap,
 .card-date-wrap {
+    display: flex;
+    justify-content: space-between;
     margin: 10px 0 5px;
     font-size: 1.3rem;
-    letter-spacing: -0.065rem;
+    letter-spacing: -0.06rem;
+}
+.payment-detail-wrap {
+    font-weight: 500;
+}
+.payment-detail-wrap > .left > span:not(:first-of-type) {
+    margin-left: 5px;
+}
+.payment-detail-wrap > .left > span.payment-type {
+    display: inline-block;
+    margin-left: -1px;
+    color: var(--gray-62);
+}
+
+.card-date-wrap .bold-text:not(:first-of-type) {
+    margin-left: 20px;
 }
 
 .card-additional-info-wrap {
@@ -258,6 +283,9 @@ section
     font-weight: 500;
     font-size: 1.4rem;
 }
+.card-button-wrap > .button-disabled {
+    color: var(--gray-99);
+}
 .card-button-wrap > .button > .icon {
     width: 1.8rem;
     height: 1.8rem;
@@ -293,7 +321,11 @@ section
 .card-status-wrap .right {
     font-weight: 700;
     font-size: 1.1rem;
-    letter-spacing: -0.055rem;
+    letter-spacing: -0.06rem;
+}
+.paid-card-list .right {
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 /*
