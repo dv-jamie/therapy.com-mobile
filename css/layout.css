@@ -10,9 +10,13 @@
 
 .header-container {
     border-bottom: 1px solid var(--gray-de);
+    background: #fff;
 }
 .gnb-container {
     width: 100%;
+}
+.home-container {
+    background: #fff;
 }
 .footer-container {
     margin-top: 60px;

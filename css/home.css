@@ -71,7 +71,7 @@
 지역 선택 영역
 */
 .location-selectbox {
-    margin-bottom: 3.7rem;
+    margin: 0 15px;
     padding: 12.5px 15px;
     border: 1px solid var(--gray-eb);
     border-radius: 10px;
