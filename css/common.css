@@ -764,12 +764,25 @@ input ui
 /*
 진행 유료 서비스 영역
 */
-.paid-info-wrap {
+.paid-info-wrap,
+.ended-paid-info-wrap {
     padding: 15px;
     border-radius: 15px;
     border: 1px solid var(--gray-eb);
     background: #fff;
 }
+.paid-info-wrap,
+.paid-info-wrap-no-data {
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--gray-eb);
+    background: #fff;
+}
+.paid-info-wrap-no-data {
+    padding: 43px;
+    text-align: center;
+}
+
 .paid-name {
     margin: 10px 0;
     font-weight: 700;
@@ -783,6 +796,18 @@ input ui
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: -0.06rem;
+}
+.paid-desc-wrap span:last-of-type {
+    color: var(--primary-red);
+}
+
+.ended-paid-info-wrap > .status-chip {
+    background: var(--gray-99);
+}
+.ended-paid-info-wrap,
+.ended-paid-info-wrap .paid-name,
+.ended-paid-info-wrap span.text {
+    color: var(--gray-99);
 }
 
 /* 페이지 안내 영역 */
