@@ -11,31 +11,27 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="/css/snb.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/table.css">
 </head>
 
 <body>
-    <header id="header" class="container header-container"></header>
-    <nav id="gnb" class="gnb-container"></nav>
+    <!-- 헤더 영역 -->
+    <header id="header" class="sub-header-container">
+        <img class="header-icon" src="/icons/arrow-left.svg" alt="뒤로가기 아이콘" />
+        <h1 class="header-title">부정사용자 신고</h1>
+    </header>
+    <!-- 헤더 영역 끝 -->
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container personal-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
-            <!-- 부정사용자 신고 -->
-            <div class="manage-user-container report-container">
-                <div class="manage-user-title-wrap">
-                    <h6 class="manage-user-title">부정사용자 신고</h6>
-                </div>
-
                 <div class="input-group">
                     <div class="input-wrap">
-                        <div class="input-wrap-left">
-                            <label class="input-label">부정사용자명</label>
-                            <input />
+                        <div>
+                            <label class="input-label">
+                                부정사용자명
+                            </label>
+                            <input class="input" />
                         </div>
                     </div>
                 </div>
@@ -45,9 +41,11 @@
 
                 <div class="input-group">
                     <div class="input-wrap">
-                        <div class="input-wrap-left">
-                            <label class="input-label">부정사용자 연락처</label>
-                            <input />
+                        <div>
+                            <label class="input-label">
+                                부정사용자 연락처
+                            </label>
+                            <input class="input" />
                         </div>
                     </div>
                 </div>
@@ -71,7 +69,7 @@
                     <div class="input-wrap">
                         <div class="input-wrap-left">
                             <label class="input-label">제목</label>
-                            <input />
+                            <input class="input" />
                         </div>
                     </div>
                 </div>
@@ -85,16 +83,15 @@
                     </div>
                 </div>
 
-                <div class="button-wrap button-wrap-padding-top">
-                    <button class="button yellow-button">
+                <div class="button-wrap">
+                    <button class="half-button yellow-button">
                         신고하기
                     </button>
-                    <button class="button gray-button">
-                        <a href="/page/personal/report-list.html">목록으로</a>
+                    <button class="half-button">
+                        목록으로
                     </button>
                 </div>
             </div>
-            <!-- 부정사용자 신고 끝 -->
         </main>
     </div>
 

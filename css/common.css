@@ -295,6 +295,12 @@ section
     border-radius: 5px;
     letter-spacing: -0.07rem;
 }
+.full-button > a {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .button-wrap {
     display: flex;
     gap: 5px;   
@@ -372,7 +378,7 @@ input ui
     margin: 0 auto;
 }
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid var(--gray-d9);
     border-radius: 5px;
     background: #fff;
@@ -421,8 +427,8 @@ input ui
     resize: none;
 }
 .input-desc {
-    margin: -10px 0 20px 0;
-    color: var(--gray-62);
+    margin: -5px 0 10px 0;
+    color: var(--gray-aa);
     font-size: 12px;
     letter-spacing: -0.05em;
 }
