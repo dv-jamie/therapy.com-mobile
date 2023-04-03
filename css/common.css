@@ -93,6 +93,9 @@ section
 .card-horizon-content-wrap::-webkit-scrollbar {
     display: none;
 }
+.card-horizon-content-wrap > .card-list {
+    min-width: 360px;
+}
 
 .list-date {
     margin: 25px 0 10px;
@@ -112,7 +115,7 @@ section
 .card-horizon-wrap .card-list {
     display: inline-block;
 }
-.card-list .icon {
+.card-list > .icon {
     position: absolute;
     right: 11.7px;
     bottom: 11.7px;
