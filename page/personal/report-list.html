@@ -11,102 +11,201 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/gnb.css">
-    <link rel="stylesheet" type="text/css" href="/css/snb.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/table.css">
 </head>
 
 <body>
-    <header id="header" class="container header-container"></header>
-    <nav id="gnb" class="gnb-container"></nav>
+    <!-- 헤더 영역 -->
+    <header id="header" class="sub-header-container">
+        <img class="header-icon" src="/icons/arrow-left.svg" alt="뒤로가기 아이콘" />
+        <h1 class="header-title">부정사용자 신고내역</h1>
+    </header>
+    <!-- 헤더 영역 끝 -->
 
-    <div class="content-container">
-        <aside id="snb" class="snb-container personal-snb"></aside>
+    <div class="view-wrap">
         <main id="main" class="main-container">
-            <!-- 부정사용자 신고 -->
-            <div class="table-container">
-                <div class="table-title-wrap">
-                    <h6 class="table-title">부정사용자 신고</h6>
-                </div>
-
-                <table class="table report-table">
-                    <thead class="thead">
-                        <tr class="thead-row">
-                            <td class="td">번호</td>
-                            <td class="td">부정사용자명</td>
-                            <td class="td title-cell">제목</td>
-                            <td class="td">신고일</td>
-                            <td class="td">신고상태</td>
-                        </tr>
-                    </thead>
-
-                    <!-- 데이터 없을 경우 -->
-                    <!-- <tbody class="tbody">
-                        <tr class="tbody-row no-data-row">
-                            <td class="td" colspan="5">
-                                <p>부정사용자 신고내역이 없습니다.</p>
-                            </td>
-                        </tr>
-                    </tbody> -->
-
-                    <!-- 데이터 있을 경우 -->
-                    <tbody>
-                        <tr class="tbody-row">
-                            <td class="td">3</td>
-                            <td class="td">박종수</td>
-                            <td class="td">
-                                <div class="title-cell ellipsis">
-                                    (광고) 노트북 명가 ThinkPad 주말특가전
-                                </div>
-                            </td>
-                            <td class="td">2023.03.14</td>
-                            <td class="td">처리중</td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">2</td>
-                            <td class="td">북경아로마</td>
-                            <td class="td">
-                                <div class="title-cell ellipsis">
-                                    Let us introduce the wonder of honeybees, the beneficial effects of honey, and recipes! [Sugi Bee Garden NEWSLETTER]
-                                </div>
-                            </td>
-                            <td class="td">2023.03.12</td>
-                            <td class="td">처리완료</td>
-                        </tr>
-                        <tr class="tbody-row">
-                            <td class="td">1</td>
-                            <td class="td">김승희</td>
-                            <td class="td">
-                                <div class="title-cell ellipsis">
-                                    [인디켓] 새로운 서비스 “기다리면 무료”, “미리보기” 기능 명칭 공모
-                                </div>
-                            </td>
-                            <td class="td">2023.03.10</td>
-                            <td class="td">처리완료</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <button class="table-assistant-button">
-                    <a href="/page/personal/report.html">신고하기</a>
-                </button>
-
-                <!-- 페이지 내비게이션 -->
-                <ul class="page-navi">
-                    <li class="current-page">1</li>
-                    <li>
-                        <img src="/icons/navi-arrow-right.svg" alt="화살표 아이콘" />
-                    </li>
-                    <li>
-                        <img src="/icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
-                    </li>
-                </ul>
-                <!-- 페이지 내비게이션 끝 -->
+            <div class="list-count-wrap">
+                <h6 class="list-count">
+                    총 <span class="blue-text">99</span>건
+                </h6>
             </div>
-            <!-- 부정사용자 신고 끝 -->
-            
+
+            <ul class="card-wrap report-card-wrap">
+                <!-- 데이터 없을 경우 -->
+                <!-- <li class="card-list no-data-card">
+                    부정사용자 신고내역이 없습니다.
+                </li> -->
+
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-status-wrap">
+                                <!-- 처리일 경우 status-chip-red -->
+                                <!-- 처리완료일 경우 status-chip-gray -->
+                                <span class="status-chip-red">처리중</span>
+                            </div>
+                            
+                            <div class="card-title">
+                                (광고)노트북 명가 ThinkPad 주말 특가전
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <span class="label">신고일</span>
+                                    2023.04.15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-status-wrap">
+                                <!-- 처리일 경우 status-chip-red -->
+                                <!-- 처리완료일 경우 status-chip-gray -->
+                                <span class="status-chip-gray">처리완료</span>
+                            </div>
+                            
+                            <div class="card-title">
+                                Let us introduce the wonder of honeybees, the beneficial effects of honey, and recipes! [Sugi Bee Garden NEWSLETTER]
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <span class="label">신고일</span>
+                                    2023.14.15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-status-wrap">
+                                <!-- 처리일 경우 status-chip-red -->
+                                <!-- 처리완료일 경우 status-chip-gray -->
+                                <span class="status-chip-gray">처리완료</span>
+                            </div>
+                            
+                            <div class="card-title">
+                                Let us introduce the wonder of honeybees, the beneficial effects of honey, and recipes! [Sugi Bee Garden NEWSLETTER]
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <span class="label">신고일</span>
+                                    2023.14.15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-status-wrap">
+                                <!-- 처리일 경우 status-chip-red -->
+                                <!-- 처리완료일 경우 status-chip-gray -->
+                                <span class="status-chip-gray">처리완료</span>
+                            </div>
+                            
+                            <div class="card-title">
+                                Let us introduce the wonder of honeybees, the beneficial effects of honey, and recipes! [Sugi Bee Garden NEWSLETTER]
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <span class="label">신고일</span>
+                                    2023.14.15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-status-wrap">
+                                <!-- 처리일 경우 status-chip-red -->
+                                <!-- 처리완료일 경우 status-chip-gray -->
+                                <span class="status-chip-gray">처리완료</span>
+                            </div>
+                            
+                            <div class="card-title">
+                                Let us introduce the wonder of honeybees, the beneficial effects of honey, and recipes! [Sugi Bee Garden NEWSLETTER]
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <span class="label">신고일</span>
+                                    2023.14.15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-status-wrap">
+                                <!-- 처리일 경우 status-chip-red -->
+                                <!-- 처리완료일 경우 status-chip-gray -->
+                                <span class="status-chip-gray">처리완료</span>
+                            </div>
+                            
+                            <div class="card-title">
+                                Let us introduce the wonder of honeybees, the beneficial effects of honey, and recipes! [Sugi Bee Garden NEWSLETTER]
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <span class="label">신고일</span>
+                                    2023.14.15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="card-content-wrap">
+                        <div>
+                            <div class="card-status-wrap">
+                                <!-- 처리일 경우 status-chip-red -->
+                                <!-- 처리완료일 경우 status-chip-gray -->
+                                <span class="status-chip-gray">처리완료</span>
+                            </div>
+                            
+                            <div class="card-title">
+                                Let us introduce the wonder of honeybees, the beneficial effects of honey, and recipes! [Sugi Bee Garden NEWSLETTER]
+                            </div>
+                            <div class="card-additional-info-wrap">
+                                <div class="card-additional-info">
+                                    <span class="label">신고일</span>
+                                    2023.14.15
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 페이지 내비게이션 -->
+            <ul class="page-navi">
+                <li class="current-page">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>
+                    <img class="icon" src="/icons/navi-arrow-right.svg" alt="화살표 아이콘" />
+                </li>
+                <li>
+                    <img class="icon" src="/icons/navi-double-arrow-right.svg" alt="화살표 아이콘" />
+                </li>
+            </ul>
+            <!-- 페이지 내비게이션 끝 -->
+
+            <button class="full-button">
+                신고하기
+            </button>
+
             <!-- 페이지 안내 -->
             <div class="page-information">
                 <ul class="paragraph">
@@ -122,26 +221,23 @@
                     </li>
                 </ul>
 
-                <ul class="paragraph">
+                <ol class="paragraph">
                     <h6 class="paragraph-title">
                         [신고방법]
                     </h6>
 
                     <li class="paragraph-list">
-                        <span class="bold-text list-style-number">1.</span>
                         마이페이지 > 부정사용자 신고 접속 후 좌측 하단에
                         <span class="bold-text">신고하기</span> 버튼을 클릭합니다.
                     </li>
                     <li class="paragraph-list">
-                        <span class="bold-text list-style-number">2.</span>
                         부정사용자명, 부정사용자 연락처, 통화내역 스크린샷 첨부, 제목, 상세사유를 입력 후 하단 신고하기 버튼을 클릭합니다.
                     </li>
                     <li class="paragraph-list">
-                        <span class="bold-text list-style-number">3.</span>
                         신고한 내용은 해당 메뉴에서 확인가능, 처리 완료 시 신고한 내용에 대해
                         <span class="bold-text">답변</span>을 드립니다.
                     </li>
-                </ul>
+                </ol>
             </div>
             <!-- 페이지 안내 끝 -->
         </main>
