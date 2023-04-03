@@ -44,6 +44,9 @@ tab-menu
 }
 
 .tab-ul {
+    max-width: 750px;
+    min-width: 370px;
+    margin: 0 auto;
     padding: 20px 15px 7px 15px;
     font-weight: 400;
     font-size: 1.4rem;
@@ -111,6 +114,7 @@ footer-guide-section
     padding: 25px;
 }
 .cs-center-section .content-wrap {
+    min-width: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,6 +173,9 @@ footer-company-info
     width: 11.3rem;
 }
 .company-info-wrap {
+    max-width: 750px;
+    min-width: 375px;
+    margin: 0 auto;
     padding: 0 25px;
 }
 .company-info-wrap .text {
