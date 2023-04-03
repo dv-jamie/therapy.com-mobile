@@ -758,6 +758,186 @@ ol.paragraph > .paragraph-list::marker {
 }
 
 /*
+업체회원 - 유료서비스신청
+*/
+.paid-service-list-wrap {
+    margin-top: 30px;
+}
+.paid-service-list {
+    margin-bottom: 15px;
+    padding: 30px 19px;
+    border-top: 2px solid var(--primary-gray);
+    background: #fff;
+    text-align: center;
+}
+
+.paid-service-slide-wrap {
+    position: relative;
+    margin: 0 18.5px 30px;
+    padding: 10px;
+    height: 467px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+}
+.paid-service-image-wrap {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.paid-service-image-wrap > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.paid-service-slide-wrap > .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+}
+.paid-service-slide-wrap > .prev-button {
+    left: 0;
+}
+.paid-service-slide-wrap > .next-button {
+    right: 0;
+}
+.paid-service-slide-wrap > .button > .icon {
+    width: 3rem;
+}
+
+.paid-service-name {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 3.1rem;
+    letter-spacing: -0.216rem;
+}
+h2.paid-service-name {
+    position: relative;
+    display: inline-block;
+}
+h2.paid-service-name > span {
+    position: relative;
+    z-index: 1;
+}
+h2.paid-service-name > .icon {
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    width: 10.95rem;
+}
+
+/* 유료 서비스 타이틀 위치 조정 */
+h2.paid-service-name-premier {
+    margin-left: -2%;
+}
+h2.paid-service-name-plus,
+h2.paid-service-name-best {
+    margin-left: -3%;
+}
+h2.paid-service-name-free {
+    margin-left: -10%;
+}
+
+h3.paid-service-name {
+    font-size: 1.9rem;
+    letter-spacing: -0.152rem;
+}
+
+.paid-service-tag {
+    display: inline-block;
+    margin: 15px 0 -5px;
+    padding: 3.5px 6px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.096rem;
+    background: linear-gradient(to right, var(--primary-orange), #FF7B5A, var(--primary-orange));
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    transform: translateY(-2px);
+}
+
+.paid-service-desc {
+    margin-top: 15px;
+    color: var(--gray-76);
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.104rem;
+}
+
+.price-list-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 25px 0;
+}
+.price-list {
+    font-size: 1.4rem;
+}
+.price-list:first-of-type {
+    width: 100%;
+}
+.price-list-type {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 4px 0 0 4px;
+    background: var(--primary-yellow);
+    font-weight: 700;
+    letter-spacing: -0.1em;
+}
+.price {
+    display: inline-block;
+    margin-left: -4px;
+    padding: 6px 20px;
+    border-radius: 0 4px 4px 0;
+    background: var(--gray-f5);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+.price .line-through-text {
+    font-weight: 500;
+}
+
+.paid-service-button-wrap {
+    display: flex;
+    gap: 7px;
+}
+.paid-service-button-wrap > .button {
+    padding: 17.5px 0;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+}
+.paid-service-button-wrap .button-name {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -0.112rem;
+    vertical-align: 0.2rem;
+}
+.paid-service-button-wrap > .yellow-button {
+    background: var(--primary-yellow);
+    color: #333;
+}
+.paid-service-button-wrap > .orange-button {
+    background: var(--button-orange);
+    color: #fff;
+}
+.paid-service-button-wrap > .gray-button {
+    background: var(--primary-gray);
+    color: #fff;
+}
+.paid-service-button-wrap .icon  {
+    margin-left: 3px;
+    height: 1.4rem;
+}
+
+/*
 재선언
 */
 .hide {
@@ -790,6 +970,9 @@ ol.paragraph > .paragraph-list::marker {
 }
 .underline-text {
     text-decoration: underline !important;
+}
+.line-through-text {
+    text-decoration: line-through !important;
 }
 
 .blue-background {
