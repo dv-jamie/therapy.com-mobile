@@ -110,12 +110,20 @@ section
     color: var(--primary-gray);
 }
 
-.card-list {
+.card-list,
+.disabled-card-list {
     position: relative;
     margin-bottom: 10px;
     border-radius: 15px;
     border: 1px solid var(--gray-eb);
     background: #fff;
+}
+.disabled-card-list,
+.disabled-card-list .button {
+    color: var(--gray-99);
+}
+.disabled-card-list .status-chip {
+    background: var(--gray-99);
 }
 .card-horizon-wrap .card-list {
     display: inline-block;
